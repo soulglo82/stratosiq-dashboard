@@ -3,563 +3,414 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patrol Daily Digest | Wednesday, January 28, 2026 | StratosIQ</title>
-  <link rel="stylesheet" href="../../assets/style.css">
+  <title>Patrol Dashboard | Tuesday, January 27, 2026</title>
+  <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator_midnight.min.css" rel="stylesheet">
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-dark: #0d1117;
+  --bg-card: #161b22;
+  --bg-input: #21262d;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --accent-green: #3fb950;
+  --accent-teal: #39d353;
+  --accent-yellow: #d29922;
+  --accent-orange: #db6d28;
+  --accent-red: #f85149;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text);
+  padding: 16px 24px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent-green);
+  letter-spacing: 1px;
+}
+
+.version {
+  background: var(--accent-green);
+  color: #000;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.date-info {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.contract-count {
+  font-size: 13px;
+  color: var(--accent-green);
+  font-weight: 500;
+}
+
+.risk-notice {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 16px;
+  margin-bottom: 14px;
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 7px 14px;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filter-btn:hover { background: var(--border); }
+.filter-btn.active { background: var(--accent-green); color: #000; font-weight: 600; }
+.filter-btn.prime.active { background: #238636; }
+.filter-btn.akron.active { background: #9e6a03; }
+.filter-btn.sprint.active { background: #bd5c00; }
+.filter-btn.agema.active { background: #da3633; }
+
+.filter-help {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.filter-help code {
+  background: var(--bg-input);
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: var(--accent-teal);
+  margin-right: 4px;
+}
+
+.help-icon {
+  color: var(--accent-teal);
+}
+
+.engine-section {
+  margin-bottom: 32px;
+}
+
+.engine-section h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.engine-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+/* Tabulator Customizations */
+.tabulator {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.tabulator-header {
+  background: var(--bg-input) !important;
+  border-bottom: 2px solid var(--border) !important;
+}
+
+.tabulator-col {
+  background: transparent !important;
+  border-right: 1px solid var(--border) !important;
+}
+
+.tabulator-col-group .tabulator-col-group-cols {
+  border-right: 2px solid var(--border) !important;
+}
+
+.tabulator-col-title {
+  font-weight: 600 !important;
+  font-size: 11px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: var(--text-muted) !important;
+}
+
+.tabulator-col-group-cols .tabulator-col-title {
+  font-size: 10px !important;
+}
+
+.tabulator-header-filter input {
+  background: var(--bg-dark) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  color: var(--text) !important;
+  padding: 4px 6px !important;
+  font-size: 11px !important;
+}
+
+.tabulator-row {
+  background: transparent !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.tabulator-row:hover {
+  background: rgba(255,255,255,0.03) !important;
+}
+
+.tabulator-cell {
+  border-right: 1px solid rgba(48,54,61,0.5) !important;
+  padding: 8px 10px !important;
+}
+
+.cell-ticker { font-weight: 700; }
+.cell-muted { color: var(--text-muted); }
+.cell-green { color: var(--accent-green); font-weight: 600; }
+.cell-teal { color: var(--accent-teal); font-weight: 600; }
+.cell-yellow { color: var(--accent-yellow); }
+.cell-red { color: var(--accent-red); }
+
+.rating-fortified { color: var(--accent-green); font-weight: 600; }
+.rating-constrained { color: var(--accent-yellow); font-weight: 600; }
+.rating-exposed { color: var(--accent-red); font-weight: 600; }
+
+footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 11px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  margin-top: 20px;
+}
+  </style>
 </head>
 <body>
   <header>
-    <div class="logo">StratosIQ</div>
-    <h1>📋 Patrol Daily Digest</h1>
-    <p class="date">Wednesday, January 28, 2026 · 27 qualified contracts</p>
-    <p class="timestamp">As of 11:50 PM ET</p>
+    <div class="header-left">
+      <div class="logo">STRATOSIQ</div>
+      <span class="version">PATROL v4.6</span>
+    </div>
+    <div class="header-right">
+      <div class="date-info">Tuesday, January 27, 2026</div>
+      <div class="contract-count">143 qualified contracts</div>
+    </div>
   </header>
-  <section class="risk-notice">
-    <p><em>Engines ordered by risk posture — Low, Moderate, Elevated, High — 
-       reflecting downside tolerance and management intensity.</em></p>
-  </section>
-  <section class="filters">
-    <button class="filter-btn active" data-filter="all">All (27)</button>
-    <button class="filter-btn prime" data-filter="PRIME">🟢 Prime (12)</button>
-    <button class="filter-btn akron" data-filter="AKRON">🟡 Akron (5)</button>
-    <button class="filter-btn sprint" data-filter="SPRINT">🟠 Sprint (0)</button>
-    <button class="filter-btn agema" data-filter="AGEMA">🔴 Agema (10)</button>
-  </section>
-  <section class="contracts" id="contract-list">
-    <div class="engine-section" data-engine="PRIME">
-      <h3>🟢 PRIME — LOW RISK INCOME</h3>
+  <div class="risk-notice">
+    <em>Engines ordered by risk posture — Low, Moderate, Elevated, High — reflecting downside tolerance and management intensity.</em>
+  </div>
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All (143)</button>
+    <button class="filter-btn prime" data-filter="PRIME">🟢 Prime (76)</button>
+    <button class="filter-btn akron" data-filter="AKRON">🟡 Akron (3)</button>
+    <button class="filter-btn sprint" data-filter="SPRINT">🟠 Sprint (1)</button>
+    <button class="filter-btn agema" data-filter="AGEMA">🔴 Agema (63)</button>
+  </div>
+  <div class="filter-help">
+    <span class="help-icon">ⓘ</span>
+    <span>Filter Syntax:</span>
+    <code>10-20</code> Range
+    <code>>50</code> Greater
+    <code><20</code> Less
+    <code>≥80</code> Min
+    <code>≤30</code> Max
+  </div>
+  <main>
+    <section class="engine-section" data-engine="PRIME">
+      <h2>🟢 PRIME — LOW RISK INCOME</h2>
       <p class="engine-desc">Prime prioritizes capital preservation and strong structural downside protection, favoring stability over yield.</p>
-      <div class="table-wrapper">
-        <table class="data-table patrol-table">
-          <thead>
-            <tr>
-              <th class="sortable">Ticker</th>
-              <th class="sortable">Strike</th>
-              <th class="sortable">Expiry</th>
-              <th class="sortable">DTE</th>
-              <th class="sortable">Stock</th>
-              <th class="sortable">Model</th>
-              <th class="sortable">Delta</th>
-              <th class="sortable">Shield</th>
-              <th class="sortable">Buffer</th>
-              <th class="sortable">Rating</th>
-              <th class="sortable">Premium</th>
-              <th class="sortable">ARoC</th>
-              <th class="sortable">Capital</th>
-              <th class="sortable">Decay</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr data-engine="PRIME">
-              <td class="ticker">MU</td>
-              <td class="num" data-value="310">$310.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="406.95">$406.95</td>
-              <td class="num">95.0/10</td>
-              <td class="num" data-value="-0.139">-0.14</td>
-              <td class="shield-cell" data-value="375.43">$375.43</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="980.0000000000001">$980</td>
-              <td class="num" data-value="0.2024">20.2%</td>
-              <td class="num" data-value="31000">$31000</td>
-              <td class="num" data-value="8.67">8.67</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">MSTR</td>
-              <td class="num" data-value="125">$125.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="162.06">$162.06</td>
-              <td class="num">94.9/10</td>
-              <td class="num" data-value="-0.1404">-0.14</td>
-              <td class="shield-cell" data-value="149.51">$149.51</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="390">$390</td>
-              <td class="num" data-value="0.1998">20.0%</td>
-              <td class="num" data-value="12500">$12500</td>
-              <td class="num" data-value="8.04">8.04</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">ORCL</td>
-              <td class="num" data-value="140">$140.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="178.19">$178.19</td>
-              <td class="num">93.9/10</td>
-              <td class="num" data-value="-0.1349">-0.13</td>
-              <td class="shield-cell" data-value="164.39">$164.39</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="310">$310</td>
-              <td class="num" data-value="0.1418">14.2%</td>
-              <td class="num" data-value="14000">$14000</td>
-              <td class="num" data-value="7.1">7.10</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">AVGO</td>
-              <td class="num" data-value="260">$260.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="318.52">$318.52</td>
-              <td class="num">93.9/10</td>
-              <td class="num" data-value="-0.1453">-0.15</td>
-              <td class="shield-cell" data-value="293.85">$293.85</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="568">$568</td>
-              <td class="num" data-value="0.1398">14.0%</td>
-              <td class="num" data-value="26000">$26000</td>
-              <td class="num" data-value="6.31">6.31</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">AMD</td>
-              <td class="num" data-value="210">$210.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="262.14">$262.14</td>
-              <td class="num">93.2/10</td>
-              <td class="num" data-value="-0.1318">-0.13</td>
-              <td class="shield-cell" data-value="241.83">$241.83</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="455">$455</td>
-              <td class="num" data-value="0.1387">13.9%</td>
-              <td class="num" data-value="21000">$21000</td>
-              <td class="num" data-value="6.35">6.35</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">APP</td>
-              <td class="num" data-value="400">$400.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="525.75">$525.75</td>
-              <td class="num">92.9/10</td>
-              <td class="num" data-value="-0.1404">-0.14</td>
-              <td class="shield-cell" data-value="485.03">$485.03</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="1335">$1335</td>
-              <td class="num" data-value="0.2137">21.4%</td>
-              <td class="num" data-value="40000">$40000</td>
-              <td class="num" data-value="8.6">8.60</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">CMG</td>
-              <td class="num" data-value="35">$35.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="40.91">$40.91</td>
-              <td class="num">92.6/10</td>
-              <td class="num" data-value="-0.1502">-0.15</td>
-              <td class="shield-cell" data-value="37.74">$37.74</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="61">$61</td>
-              <td class="num" data-value="0.1107">11.1%</td>
-              <td class="num" data-value="3500">$3500</td>
-              <td class="num" data-value="5.05">5.05</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">NVDA</td>
-              <td class="num" data-value="155">$155.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="187.86">$187.86</td>
-              <td class="num">91.7/10</td>
-              <td class="num" data-value="-0.1279">-0.13</td>
-              <td class="shield-cell" data-value="173.31">$173.31</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="243.00000000000003">$243</td>
-              <td class="num" data-value="0.1004">10.0%</td>
-              <td class="num" data-value="15500">$15500</td>
-              <td class="num" data-value="5.3">5.30</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">AMZN</td>
-              <td class="num" data-value="205">$205.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="238.1">$238.10</td>
-              <td class="num">90.4/10</td>
-              <td class="num" data-value="-0.1406">-0.14</td>
-              <td class="shield-cell" data-value="219.66">$219.66</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="259">$259</td>
-              <td class="num" data-value="0.0807">8.1%</td>
-              <td class="num" data-value="20500">$20500</td>
-              <td class="num" data-value="4.61">4.61</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">INTC</td>
-              <td class="num" data-value="39">$39.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="46.64">$46.64</td>
-              <td class="num">90.3/10</td>
-              <td class="num" data-value="-0.1596">-0.16</td>
-              <td class="shield-cell" data-value="43.03">$43.03</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="99">$99</td>
-              <td class="num" data-value="0.1617">16.2%</td>
-              <td class="num" data-value="3900">$3900</td>
-              <td class="num" data-value="6.29">6.29</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">UBER</td>
-              <td class="num" data-value="72.5">$72.50 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="83.26">$83.26</td>
-              <td class="num">90.0/10</td>
-              <td class="num" data-value="-0.161">-0.16</td>
-              <td class="shield-cell" data-value="76.81">$76.81</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="123">$123</td>
-              <td class="num" data-value="0.1086">10.9%</td>
-              <td class="num" data-value="7250">$7250</td>
-              <td class="num" data-value="4.9">4.90</td>
-            </tr>
-            <tr data-engine="PRIME">
-              <td class="ticker">GOOG</td>
-              <td class="num" data-value="290">$290.00 PUT</td>
-              <td class="muted" data-value="Fri Mar 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-03-19</td>
-              <td class="num" data-value="57">57</td>
-              <td class="num" data-value="331.23">$331.23</td>
-              <td class="num">89.9/10</td>
-              <td class="num" data-value="-0.15">-0.15</td>
-              <td class="shield-cell" data-value="305.57">$305.57</td>
-              <td class="shield-cell" data-value="7.75">7.8%</td>
-              <td class="shield-cell" data-value="7.75"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="405">$405</td>
-              <td class="num" data-value="0.0894">8.9%</td>
-              <td class="num" data-value="29000">$29000</td>
-              <td class="num" data-value="4.24">4.24</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="engine-section" data-engine="AKRON">
-      <h3>🟡 AKRON — MODERATE RISK INCOME</h3>
+      <div id="table-PRIME"></div>
+    </section>
+    <section class="engine-section" data-engine="AKRON">
+      <h2>🟡 AKRON — MODERATE RISK INCOME</h2>
       <p class="engine-desc">Akron balances yield potential with reasonable downside buffers.</p>
-      <div class="table-wrapper">
-        <table class="data-table patrol-table">
-          <thead>
-            <tr>
-              <th class="sortable">Ticker</th>
-              <th class="sortable">Strike</th>
-              <th class="sortable">Expiry</th>
-              <th class="sortable">DTE</th>
-              <th class="sortable">Stock</th>
-              <th class="sortable">Model</th>
-              <th class="sortable">Delta</th>
-              <th class="sortable">Shield</th>
-              <th class="sortable">Buffer</th>
-              <th class="sortable">Rating</th>
-              <th class="sortable">Premium</th>
-              <th class="sortable">ARoC</th>
-              <th class="sortable">Capital</th>
-              <th class="sortable">Decay</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr data-engine="AKRON">
-              <td class="ticker">NFLX</td>
-              <td class="num" data-value="80">$80.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 27 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-26</td>
-              <td class="num" data-value="36">36</td>
-              <td class="num" data-value="85.13">$85.13</td>
-              <td class="num">82.5/10</td>
-              <td class="num" data-value="-0.2328">-0.23</td>
-              <td class="shield-cell" data-value="79.56">$79.56</td>
-              <td class="shield-cell" data-value="6.55">6.5%</td>
-              <td class="shield-cell" data-value="6.55"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="111.00000000000001">$111</td>
-              <td class="num" data-value="0.1407">14.1%</td>
-              <td class="num" data-value="8000">$8000</td>
-              <td class="num" data-value="5.02">5.02</td>
-            </tr>
-            <tr data-engine="AKRON">
-              <td class="ticker">META</td>
-              <td class="num" data-value="610">$610.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 27 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-26</td>
-              <td class="num" data-value="36">36</td>
-              <td class="num" data-value="658.21">$658.21</td>
-              <td class="num">79.9/10</td>
-              <td class="num" data-value="-0.2384">-0.24</td>
-              <td class="shield-cell" data-value="615.12">$615.12</td>
-              <td class="shield-cell" data-value="6.55">6.5%</td>
-              <td class="shield-cell" data-value="6.55"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="1245">$1245</td>
-              <td class="num" data-value="0.2069">20.7%</td>
-              <td class="num" data-value="61000">$61000</td>
-              <td class="num" data-value="6.84">6.84</td>
-            </tr>
-            <tr data-engine="AKRON">
-              <td class="ticker">MSFT</td>
-              <td class="num" data-value="430">$430.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 27 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-26</td>
-              <td class="num" data-value="36">36</td>
-              <td class="num" data-value="458.9">$458.90</td>
-              <td class="num">79.3/10</td>
-              <td class="num" data-value="-0.227">-0.23</td>
-              <td class="shield-cell" data-value="428.86">$428.86</td>
-              <td class="shield-cell" data-value="6.55">6.5%</td>
-              <td class="shield-cell" data-value="6.55"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="608">$608</td>
-              <td class="num" data-value="0.1432">14.3%</td>
-              <td class="num" data-value="43000">$43000</td>
-              <td class="num" data-value="4.83">4.83</td>
-            </tr>
-            <tr data-engine="AKRON">
-              <td class="ticker">AAPL</td>
-              <td class="num" data-value="230">$230.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 27 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-26</td>
-              <td class="num" data-value="36">36</td>
-              <td class="num" data-value="246.29">$246.29</td>
-              <td class="num">75.9/10</td>
-              <td class="num" data-value="-0.2123">-0.21</td>
-              <td class="shield-cell" data-value="230.17">$230.17</td>
-              <td class="shield-cell" data-value="6.55">6.5%</td>
-              <td class="shield-cell" data-value="6.55"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="289">$289</td>
-              <td class="num" data-value="0.1274">12.7%</td>
-              <td class="num" data-value="23000">$23000</td>
-              <td class="num" data-value="4.86">4.86</td>
-            </tr>
-            <tr data-engine="AKRON">
-              <td class="ticker">GOOGL</td>
-              <td class="num" data-value="310">$310.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 27 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-26</td>
-              <td class="num" data-value="36">36</td>
-              <td class="num" data-value="331.17">$331.17</td>
-              <td class="num">75.4/10</td>
-              <td class="num" data-value="-0.2499">-0.25</td>
-              <td class="shield-cell" data-value="309.49">$309.49</td>
-              <td class="shield-cell" data-value="6.55">6.5%</td>
-              <td class="shield-cell" data-value="6.55"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="613">$613</td>
-              <td class="num" data-value="0.2003">20.0%</td>
-              <td class="num" data-value="31000">$31000</td>
-              <td class="num" data-value="6.36">6.36</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="engine-section" data-engine="AGEMA">
-      <h3>🔴 AGEMA — HIGH RISK INCOME</h3>
+      <div id="table-AKRON"></div>
+    </section>
+    <section class="engine-section" data-engine="SPRINT">
+      <h2>🟠 SPRINT — ELEVATED RISK INCOME</h2>
+      <p class="engine-desc">Sprint accepts tighter margins for enhanced income, requiring closer monitoring.</p>
+      <div id="table-SPRINT"></div>
+    </section>
+    <section class="engine-section" data-engine="AGEMA">
+      <h2>🔴 AGEMA — HIGH RISK INCOME</h2>
       <p class="engine-desc">Active management required. Agema is designed for maximum capital efficiency and theta acceleration.</p>
-      <div class="table-wrapper">
-        <table class="data-table patrol-table">
-          <thead>
-            <tr>
-              <th class="sortable">Ticker</th>
-              <th class="sortable">Strike</th>
-              <th class="sortable">Expiry</th>
-              <th class="sortable">DTE</th>
-              <th class="sortable">Stock</th>
-              <th class="sortable">Model</th>
-              <th class="sortable">Delta</th>
-              <th class="sortable">Shield</th>
-              <th class="sortable">Buffer</th>
-              <th class="sortable">Rating</th>
-              <th class="sortable">Premium</th>
-              <th class="sortable">ARoC</th>
-              <th class="sortable">Capital</th>
-              <th class="sortable">Decay</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr data-engine="AGEMA">
-              <td class="ticker">SMCI</td>
-              <td class="num" data-value="30">$30.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-19</td>
-              <td class="num" data-value="29">29</td>
-              <td class="num" data-value="32.02">$32.02</td>
-              <td class="num">91.1/10</td>
-              <td class="num" data-value="-0.3366">-0.34</td>
-              <td class="shield-cell" data-value="29.99">$29.99</td>
-              <td class="shield-cell" data-value="6.32">6.3%</td>
-              <td class="shield-cell" data-value="6.32"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="183">$183</td>
-              <td class="num" data-value="0.7657">76.6%</td>
-              <td class="num" data-value="3000">$3000</td>
-              <td class="num" data-value="15.54">15.54</td>
-            </tr>
-            <tr data-engine="AGEMA">
-              <td class="ticker">CVNA</td>
-              <td class="num" data-value="450">$450.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-19</td>
-              <td class="num" data-value="29">29</td>
-              <td class="num" data-value="474.27">$474.27</td>
-              <td class="num">89.2/10</td>
-              <td class="num" data-value="-0.3544">-0.35</td>
-              <td class="shield-cell" data-value="444.27">$444.27</td>
-              <td class="shield-cell" data-value="6.32">6.3%</td>
-              <td class="shield-cell" data-value="6.32"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="2688">$2688</td>
-              <td class="num" data-value="0.7517">75.2%</td>
-              <td class="num" data-value="45000">$45000</td>
-              <td class="num" data-value="15.34">15.34</td>
-            </tr>
-            <tr data-engine="AGEMA">
-              <td class="ticker">DDOG</td>
-              <td class="num" data-value="125">$125.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-19</td>
-              <td class="num" data-value="29">29</td>
-              <td class="num" data-value="130.09">$130.09</td>
-              <td class="num">84.9/10</td>
-              <td class="num" data-value="-0.3711">-0.37</td>
-              <td class="shield-cell" data-value="121.86">$121.86</td>
-              <td class="shield-cell" data-value="6.32">6.3%</td>
-              <td class="shield-cell" data-value="6.32"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="683">$683</td>
-              <td class="num" data-value="0.6872">68.7%</td>
-              <td class="num" data-value="12500">$12500</td>
-              <td class="num" data-value="13.57">13.57</td>
-            </tr>
-            <tr data-engine="AGEMA">
-              <td class="ticker">DASH</td>
-              <td class="num" data-value="200">$200.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-19</td>
-              <td class="num" data-value="29">29</td>
-              <td class="num" data-value="210.27">$210.27</td>
-              <td class="num">84.8/10</td>
-              <td class="num" data-value="-0.3462">-0.35</td>
-              <td class="shield-cell" data-value="196.97">$196.97</td>
-              <td class="shield-cell" data-value="6.32">6.3%</td>
-              <td class="shield-cell" data-value="6.32"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="880.0000000000001">$880</td>
-              <td class="num" data-value="0.5538">55.4%</td>
-              <td class="num" data-value="20000">$20000</td>
-              <td class="num" data-value="11.77">11.77</td>
-            </tr>
-            <tr data-engine="AGEMA">
-              <td class="ticker">FISV</td>
-              <td class="num" data-value="65">$65.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-19</td>
-              <td class="num" data-value="29">29</td>
-              <td class="num" data-value="67.46">$67.46</td>
-              <td class="num">83.9/10</td>
-              <td class="num" data-value="-0.3714">-0.37</td>
-              <td class="shield-cell" data-value="63.19">$63.19</td>
-              <td class="shield-cell" data-value="6.32">6.3%</td>
-              <td class="shield-cell" data-value="6.32"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="315">$315</td>
-              <td class="num" data-value="0.6099">61.0%</td>
-              <td class="num" data-value="6500">$6500</td>
-              <td class="num" data-value="12.25">12.25</td>
-            </tr>
-            <tr data-engine="AGEMA">
-              <td class="ticker">LRCX</td>
-              <td class="num" data-value="210">$210.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-19</td>
-              <td class="num" data-value="29">29</td>
-              <td class="num" data-value="219.45">$219.45</td>
-              <td class="num">83.9/10</td>
-              <td class="num" data-value="-0.3597">-0.36</td>
-              <td class="shield-cell" data-value="205.57">$205.57</td>
-              <td class="shield-cell" data-value="6.32">6.3%</td>
-              <td class="shield-cell" data-value="6.32"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="993">$993</td>
-              <td class="num" data-value="0.5948">59.5%</td>
-              <td class="num" data-value="21000">$21000</td>
-              <td class="num" data-value="12.17">12.17</td>
-            </tr>
-            <tr data-engine="AGEMA">
-              <td class="ticker">TTD</td>
-              <td class="num" data-value="35">$35.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-19</td>
-              <td class="num" data-value="29">29</td>
-              <td class="num" data-value="36.61">$36.61</td>
-              <td class="num">83.5/10</td>
-              <td class="num" data-value="-0.3774">-0.38</td>
-              <td class="shield-cell" data-value="34.29">$34.29</td>
-              <td class="shield-cell" data-value="6.32">6.3%</td>
-              <td class="shield-cell" data-value="6.32"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="239">$239</td>
-              <td class="num" data-value="0.8595">86.0%</td>
-              <td class="num" data-value="3500">$3500</td>
-              <td class="num" data-value="15.82">15.82</td>
-            </tr>
-            <tr data-engine="AGEMA">
-              <td class="ticker">ANET</td>
-              <td class="num" data-value="131">$131.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-19</td>
-              <td class="num" data-value="29">29</td>
-              <td class="num" data-value="138.13">$138.13</td>
-              <td class="num">82.7/10</td>
-              <td class="num" data-value="-0.3425">-0.34</td>
-              <td class="shield-cell" data-value="129.39">$129.39</td>
-              <td class="shield-cell" data-value="6.32">6.3%</td>
-              <td class="shield-cell" data-value="6.32"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="580">$580</td>
-              <td class="num" data-value="0.5573">55.7%</td>
-              <td class="num" data-value="13100">$13100</td>
-              <td class="num" data-value="12.07">12.07</td>
-            </tr>
-            <tr data-engine="AGEMA">
-              <td class="ticker">SHOP</td>
-              <td class="num" data-value="130">$130.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-19</td>
-              <td class="num" data-value="29">29</td>
-              <td class="num" data-value="139.3">$139.30</td>
-              <td class="num">82.2/10</td>
-              <td class="num" data-value="-0.3197">-0.32</td>
-              <td class="shield-cell" data-value="130.49">$130.49</td>
-              <td class="shield-cell" data-value="6.32">6.3%</td>
-              <td class="shield-cell" data-value="6.32"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="563">$563</td>
-              <td class="num" data-value="0.5446">54.5%</td>
-              <td class="num" data-value="13000">$13000</td>
-              <td class="num" data-value="11.99">11.99</td>
-            </tr>
-            <tr data-engine="AGEMA">
-              <td class="ticker">TEAM</td>
-              <td class="num" data-value="125">$125.00 PUT</td>
-              <td class="muted" data-value="Fri Feb 20 2026 00:00:00 GMT+0800 (Singapore Standard Time)">2026-02-19</td>
-              <td class="num" data-value="29">29</td>
-              <td class="num" data-value="130.69">$130.69</td>
-              <td class="num">80.5/10</td>
-              <td class="num" data-value="-0.3767">-0.38</td>
-              <td class="shield-cell" data-value="122.42">$122.42</td>
-              <td class="shield-cell" data-value="6.32">6.3%</td>
-              <td class="shield-cell" data-value="6.32"><span class="fortified">FORTIFIED 🟢</span></td>
-              <td class="num" data-value="770">$770</td>
-              <td class="num" data-value="0.7753">77.5%</td>
-              <td class="num" data-value="12500">$12500</td>
-              <td class="num" data-value="14.38">14.38</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-  <section class="shield-legend">
-    <h3>🛡️ Understanding the Shield</h3>
-    <ul>
-      <li><strong>Shield floor:</strong> Estimated downside danger zone based on volatility and time</li>
-      <li><span class="fortified">FORTIFIED 🟢</span>: Wide buffer (≥5%)</li>
-      <li><span class="constrained">CONSTRAINED 🟡</span>: Buffer present but limited (2-5%)</li>
-      <li><span class="exposed">EXPOSED 🔴</span>: Minimal buffer, relies on decay (&lt;2%)</li>
-    </ul>
-  </section>
-  <footer>
-    <p class="disclaimer">⚠️ For informational and educational purposes only. 
-       Options involve significant risk. You are solely responsible for your trading decisions.</p>
-    <p class="nav">
-      <a href="../archive.html">View Archive</a> · 
-      <a href="mailto:support@stratosiq.com">Contact</a>
-    </p>
-    <p class="copyright">© 2026 StratosIQ</p>
-  </footer>
-  <script src="../../assets/script.js"></script>
+      <div id="table-AGEMA"></div>
+    </section>
+  </main>
+  <footer>Generated by StratosIQ Patrol · Data as of market close</footer>
+  <script src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
+  <script>
+var engineData = {"PRIME":[{"ticker":"AVGO","expiry":"2026-03-19","dte":53,"strike":270,"spot":332.81,"delta":-0.1368,"premium":5.53,"spreadPct":0.0452,"score":98.66,"pop":0.8632,"aroc":0.1409,"thetaEff":0.06,"capital":27000,"shieldPrice":306.91,"buffer":7.78},{"ticker":"AMAT","expiry":"2026-03-19","dte":53,"strike":270,"spot":332.75,"delta":-0.1453,"premium":5.38,"spreadPct":0.0465,"score":98.14,"pop":0.8547,"aroc":0.1371,"thetaEff":0.07,"capital":27000,"shieldPrice":304.26,"buffer":8.56},{"ticker":"ANET","expiry":"2026-03-19","dte":53,"strike":120,"spot":146.68,"delta":-0.1522,"premium":2.97,"spreadPct":0.0539,"score":95.91,"pop":0.8478,"aroc":0.1704,"thetaEff":0.07,"capital":12000,"shieldPrice":135.26,"buffer":7.78},{"ticker":"HOOD","expiry":"2026-03-19","dte":53,"strike":85,"spot":105.22,"delta":-0.1563,"premium":2.35,"spreadPct":0.0552,"score":94.72,"pop":0.8437,"aroc":0.1908,"thetaEff":0.08,"capital":8500,"shieldPrice":97.03,"buffer":7.78},{"ticker":"AMD","expiry":"2026-03-19","dte":53,"strike":200,"spot":251.97,"delta":-0.1228,"premium":3.83,"spreadPct":0.0392,"score":94.05,"pop":0.8772,"aroc":0.1317,"thetaEff":0.07,"capital":20000,"shieldPrice":232.36,"buffer":7.78},{"ticker":"GOOGL","expiry":"2026-03-19","dte":53,"strike":290,"spot":334.55,"delta":-0.1372,"premium":3.8,"spreadPct":0.0263,"score":92.39,"pop":0.8628,"aroc":0.0902,"thetaEff":0.04,"capital":29000,"shieldPrice":308.51,"buffer":7.78},{"ticker":"GOOG","expiry":"2026-03-19","dte":53,"strike":290,"spot":334.93,"delta":-0.1418,"premium":3.67,"spreadPct":0.0136,"score":92.11,"pop":0.8582,"aroc":0.0873,"thetaEff":0.05,"capital":29000,"shieldPrice":308.86,"buffer":7.78},{"ticker":"AMZN","expiry":"2026-03-19","dte":53,"strike":215,"spot":244.63,"delta":-0.1637,"premium":3.52,"spreadPct":0.0142,"score":91.35,"pop":0.8363,"aroc":0.1129,"thetaEff":0.05,"capital":21500,"shieldPrice":225.59,"buffer":7.78},{"ticker":"ABNB","expiry":"2026-03-19","dte":53,"strike":115,"spot":132.26,"delta":-0.1617,"premium":1.94,"spreadPct":0.0568,"score":91.27,"pop":0.8383,"aroc":0.1159,"thetaEff":0.05,"capital":11500,"shieldPrice":121.97,"buffer":7.78},{"ticker":"CRM","expiry":"2026-03-19","dte":53,"strike":195,"spot":228.38,"delta":-0.1457,"premium":2.98,"spreadPct":0.0805,"score":90.06,"pop":0.8543,"aroc":0.1052,"thetaEff":0.05,"capital":19500,"shieldPrice":210.61,"buffer":7.78},{"ticker":"APP","expiry":"2026-03-19","dte":53,"strike":400,"spot":543.98,"delta":-0.1111,"premium":10.35,"spreadPct":0.0676,"score":89.97,"pop":0.8889,"aroc":0.1782,"thetaEff":0.08,"capital":40000,"shieldPrice":501.64,"buffer":7.78},{"ticker":"CRWD","expiry":"2026-03-19","dte":53,"strike":400,"spot":476.69,"delta":-0.147,"premium":6.88,"spreadPct":0.0945,"score":89.81,"pop":0.853,"aroc":0.1184,"thetaEff":0.06,"capital":40000,"shieldPrice":439.59,"buffer":7.78},{"ticker":"COIN","expiry":"2026-03-19","dte":53,"strike":175,"spot":210.78,"delta":-0.1647,"premium":4.42,"spreadPct":0.0791,"score":89.55,"pop":0.8353,"aroc":0.1741,"thetaEff":0.07,"capital":17500,"shieldPrice":194.38,"buffer":7.78},{"ticker":"AAPL","expiry":"2026-03-19","dte":53,"strike":230,"spot":258.29,"delta":-0.1385,"premium":2.24,"spreadPct":0.0134,"score":88.98,"pop":0.8615,"aroc":0.0669,"thetaEff":0.04,"capital":23000,"shieldPrice":238.19,"buffer":7.78},{"ticker":"INTC","expiry":"2026-03-19","dte":53,"strike":36,"spot":43.93,"delta":-0.1369,"premium":0.65,"spreadPct":0.1231,"score":87.68,"pop":0.8631,"aroc":0.1243,"thetaEff":0.06,"capital":3600,"shieldPrice":40.51,"buffer":7.78},{"ticker":"C","expiry":"2026-03-19","dte":53,"strike":100,"spot":114.78,"delta":-0.1445,"premium":0.97,"spreadPct":0.0725,"score":85,"pop":0.8555,"aroc":0.0665,"thetaEff":0.04,"capital":10000,"shieldPrice":104.95,"buffer":8.56},{"ticker":"BAC","expiry":"2026-03-19","dte":53,"strike":46,"spot":52.16,"delta":-0.1392,"premium":0.32,"spreadPct":0.0625,"score":84.1,"pop":0.8608,"aroc":0.0479,"thetaEff":0.03,"capital":4600,"shieldPrice":48.1,"buffer":7.78},{"ticker":"APO","expiry":"2026-03-19","dte":53,"strike":115,"spot":131.73,"delta":-0.1687,"premium":1.95,"spreadPct":0.1026,"score":83.9,"pop":0.8313,"aroc":0.1168,"thetaEff":0.04,"capital":11500,"shieldPrice":120.45,"buffer":8.56},{"ticker":"JPM","expiry":"2026-03-19","dte":53,"strike":275,"spot":300.17,"delta":-0.1614,"premium":2.59,"spreadPct":0.0578,"score":83,"pop":0.8386,"aroc":0.065,"thetaEff":0.03,"capital":27500,"shieldPrice":276.81,"buffer":7.78},{"ticker":"COF","expiry":"2026-03-19","dte":53,"strike":195,"spot":217.33,"delta":-0.1632,"premium":2.65,"spreadPct":0.0755,"score":81.03,"pop":0.8368,"aroc":0.0936,"thetaEff":0.04,"capital":19500,"shieldPrice":200.42,"buffer":7.78},{"ticker":"ADBE","expiry":"2026-03-19","dte":53,"strike":250,"spot":297.41,"delta":-0.1189,"premium":3.15,"spreadPct":0.0952,"score":80.94,"pop":0.8811,"aroc":0.0868,"thetaEff":0.05,"capital":25000,"shieldPrice":274.26,"buffer":7.78},{"ticker":"CVNA","expiry":"2026-03-19","dte":53,"strike":390,"spot":478.05,"delta":-0.1759,"premium":13.93,"spreadPct":0.1329,"score":80.04,"pop":0.8241,"aroc":0.2459,"thetaEff":0.09,"capital":39000,"shieldPrice":437.12,"buffer":8.56},{"ticker":"BX","expiry":"2026-03-19","dte":53,"strike":130,"spot":148.44,"delta":-0.1655,"premium":1.98,"spreadPct":0.1266,"score":79.16,"pop":0.8345,"aroc":0.1046,"thetaEff":0.04,"capital":13000,"shieldPrice":136.89,"buffer":7.78},{"ticker":"BA","expiry":"2026-03-19","dte":53,"strike":220,"spot":244.56,"delta":-0.1632,"premium":2.54,"spreadPct":0.1102,"score":78.2,"pop":0.8368,"aroc":0.0795,"thetaEff":0.04,"capital":22000,"shieldPrice":223.62,"buffer":8.56},{"ticker":"CEG","expiry":"2026-03-19","dte":53,"strike":240,"spot":288.79,"delta":-0.148,"premium":4.85,"spreadPct":0.1443,"score":77.92,"pop":0.852,"aroc":0.1392,"thetaEff":0.06,"capital":24000,"shieldPrice":266.31,"buffer":7.78},{"ticker":"KR","expiry":"2026-03-19","dte":53,"strike":55,"spot":62.09,"delta":-0.1511,"premium":0.57,"spreadPct":0.1217,"score":77.79,"pop":0.8489,"aroc":0.072,"thetaEff":0.03,"capital":5500,"shieldPrice":57.26,"buffer":7.78},{"ticker":"GM","expiry":"2026-03-19","dte":53,"strike":77.5,"spot":86.34,"delta":-0.1684,"premium":1.04,"spreadPct":0.1244,"score":77.52,"pop":0.8316,"aroc":0.0929,"thetaEff":0.04,"capital":7750,"shieldPrice":79.62,"buffer":7.78},{"ticker":"BSX","expiry":"2026-03-19","dte":53,"strike":85,"spot":93.6,"delta":-0.173,"premium":1,"spreadPct":0.1,"score":77.48,"pop":0.827,"aroc":0.081,"thetaEff":0.04,"capital":8500,"shieldPrice":86.32,"buffer":7.78},{"ticker":"DAL","expiry":"2026-03-19","dte":53,"strike":55,"spot":66.13,"delta":-0.1373,"premium":0.67,"spreadPct":0.1654,"score":76.5,"pop":0.8627,"aroc":0.0833,"thetaEff":0.05,"capital":5500,"shieldPrice":60.98,"buffer":7.78},{"ticker":"CVX","expiry":"2026-03-19","dte":53,"strike":155,"spot":169.06,"delta":-0.1775,"premium":1.57,"spreadPct":0.0892,"score":75.82,"pop":0.8225,"aroc":0.0698,"thetaEff":0.02,"capital":15500,"shieldPrice":155.9,"buffer":7.78},{"ticker":"CCL","expiry":"2026-03-19","dte":53,"strike":24,"spot":28.7,"delta":-0.1581,"premium":0.43,"spreadPct":0.2069,"score":74.96,"pop":0.8419,"aroc":0.1248,"thetaEff":0.05,"capital":2400,"shieldPrice":26.24,"buffer":8.56},{"ticker":"GILD","expiry":"2026-03-19","dte":53,"strike":125,"spot":141,"delta":-0.166,"premium":1.55,"spreadPct":0.1093,"score":74.31,"pop":0.834,"aroc":0.0857,"thetaEff":0.03,"capital":12500,"shieldPrice":128.93,"buffer":8.56},{"ticker":"ARM","expiry":"2026-03-19","dte":53,"strike":95,"spot":114.86,"delta":-0.1582,"premium":2.19,"spreadPct":0.2232,"score":74.13,"pop":0.8418,"aroc":0.1591,"thetaEff":0.07,"capital":9500,"shieldPrice":105.03,"buffer":8.56},{"ticker":"ALB","expiry":"2026-03-19","dte":53,"strike":160,"spot":194.44,"delta":-0.1793,"premium":5.35,"spreadPct":0.1308,"score":72.99,"pop":0.8207,"aroc":0.2303,"thetaEff":0.08,"capital":16000,"shieldPrice":177.79,"buffer":8.56},{"ticker":"KO","expiry":"2026-03-19","dte":53,"strike":67.5,"spot":73.53,"delta":-0.1326,"premium":0.44,"spreadPct":0.1364,"score":72.99,"pop":0.8674,"aroc":0.0449,"thetaEff":0.02,"capital":6750,"shieldPrice":67.81,"buffer":7.78},{"ticker":"ACN","expiry":"2026-03-19","dte":53,"strike":240,"spot":275.74,"delta":-0.135,"premium":2.83,"spreadPct":0.1947,"score":72.9,"pop":0.865,"aroc":0.0811,"thetaEff":0.04,"capital":24000,"shieldPrice":248.59,"buffer":9.85},{"ticker":"KMB","expiry":"2026-03-19","dte":53,"strike":90,"spot":100.63,"delta":-0.1166,"premium":0.47,"spreadPct":0.1053,"score":71.01,"pop":0.8834,"aroc":0.0363,"thetaEff":0.02,"capital":9000,"shieldPrice":92.8,"buffer":7.78},{"ticker":"GIS","expiry":"2026-03-19","dte":53,"strike":40,"spot":44.72,"delta":-0.1244,"premium":0.32,"spreadPct":0.1538,"score":70.75,"pop":0.8756,"aroc":0.056,"thetaEff":0.04,"capital":4000,"shieldPrice":41.24,"buffer":7.78},{"ticker":"IT","expiry":"2026-03-19","dte":53,"strike":195,"spot":232.06,"delta":-0.1646,"premium":4.2,"spreadPct":0.0952,"score":70.25,"pop":0.8354,"aroc":0.1483,"thetaEff":0.06,"capital":19500,"shieldPrice":209.21,"buffer":9.85},{"ticker":"GLW","expiry":"2026-03-19","dte":53,"strike":90,"spot":109.59,"delta":-0.1379,"premium":1.77,"spreadPct":0.2873,"score":68.94,"pop":0.8621,"aroc":0.1358,"thetaEff":0.06,"capital":9000,"shieldPrice":100.21,"buffer":8.56},{"ticker":"AXP","expiry":"2026-03-19","dte":53,"strike":320,"spot":359.27,"delta":-0.1404,"premium":3.5,"spreadPct":0.2,"score":68.55,"pop":0.8596,"aroc":0.0753,"thetaEff":0.04,"capital":32000,"shieldPrice":328.51,"buffer":8.56},{"ticker":"ABT","expiry":"2026-03-19","dte":53,"strike":100,"spot":108.16,"delta":-0.1664,"premium":0.89,"spreadPct":0.1124,"score":68.48,"pop":0.8336,"aroc":0.0613,"thetaEff":0.04,"capital":10000,"shieldPrice":99.74,"buffer":7.78},{"ticker":"ASML","expiry":"2026-03-19","dte":53,"strike":1240,"spot":1455.26,"delta":-0.1561,"premium":21.65,"spreadPct":0.1524,"score":68.14,"pop":0.8439,"aroc":0.1202,"thetaEff":0.06,"capital":124000,"shieldPrice":1325.01,"buffer":8.95},{"ticker":"IBM","expiry":"2026-03-19","dte":53,"strike":255,"spot":293.72,"delta":-0.1542,"premium":3.3,"spreadPct":0.1212,"score":67.83,"pop":0.8458,"aroc":0.0891,"thetaEff":0.04,"capital":25500,"shieldPrice":264.8,"buffer":9.85},{"ticker":"KMI","expiry":"2026-03-19","dte":53,"strike":27,"spot":29.59,"delta":-0.1387,"premium":0.23,"spreadPct":0.2222,"score":66.94,"pop":0.8613,"aroc":0.0574,"thetaEff":0.02,"capital":2700,"shieldPrice":27.06,"buffer":8.56},{"ticker":"DELL","expiry":"2026-03-19","dte":53,"strike":95,"spot":114.56,"delta":-0.1469,"premium":1.95,"spreadPct":0.3077,"score":66.82,"pop":0.8531,"aroc":0.1414,"thetaEff":0.07,"capital":9500,"shieldPrice":104.75,"buffer":8.56},{"ticker":"ABBV","expiry":"2026-03-19","dte":53,"strike":200,"spot":223.88,"delta":-0.1531,"premium":2.1,"spreadPct":0.219,"score":66.81,"pop":0.8469,"aroc":0.0723,"thetaEff":0.04,"capital":20000,"shieldPrice":204.71,"buffer":8.56},{"ticker":"BKR","expiry":"2026-03-19","dte":53,"strike":50,"spot":56.51,"delta":-0.1726,"premium":0.77,"spreadPct":0.1935,"score":65.76,"pop":0.8274,"aroc":0.1067,"thetaEff":0.04,"capital":5000,"shieldPrice":50.95,"buffer":9.85},{"ticker":"KLAC","expiry":"2026-03-19","dte":53,"strike":1360,"spot":1616.14,"delta":-0.1624,"premium":29.9,"spreadPct":0.2207,"score":65.39,"pop":0.8376,"aroc":0.1514,"thetaEff":0.06,"capital":136000,"shieldPrice":1457.03,"buffer":9.85},{"ticker":"COST","expiry":"2026-03-19","dte":53,"strike":880,"spot":970.02,"delta":-0.1331,"premium":6.43,"spreadPct":0.1479,"score":65.11,"pop":0.8669,"aroc":0.0503,"thetaEff":0.03,"capital":88000,"shieldPrice":883.2,"buffer":8.95},{"ticker":"HAL","expiry":"2026-03-19","dte":53,"strike":30,"spot":34.25,"delta":-0.1674,"premium":0.45,"spreadPct":0.2472,"score":64.8,"pop":0.8326,"aroc":0.1022,"thetaEff":0.04,"capital":3000,"shieldPrice":31.32,"buffer":8.56},{"ticker":"CPRT","expiry":"2026-03-19","dte":53,"strike":35,"spot":40.36,"delta":-0.1481,"premium":0.45,"spreadPct":0.2222,"score":64.66,"pop":0.8519,"aroc":0.0885,"thetaEff":0.05,"capital":3500,"shieldPrice":36.9,"buffer":8.56},{"ticker":"CAT","expiry":"2026-03-19","dte":53,"strike":560,"spot":638.86,"delta":-0.1533,"premium":8.6,"spreadPct":0.2209,"score":63.83,"pop":0.8467,"aroc":0.1058,"thetaEff":0.05,"capital":56000,"shieldPrice":584.17,"buffer":8.56},{"ticker":"DG","expiry":"2026-03-19","dte":53,"strike":125,"spot":147.59,"delta":-0.1367,"premium":1.9,"spreadPct":0.3053,"score":63.71,"pop":0.8633,"aroc":0.1047,"thetaEff":0.06,"capital":12500,"shieldPrice":134.95,"buffer":8.56},{"ticker":"KKR","expiry":"2026-03-19","dte":53,"strike":100,"spot":115.87,"delta":-0.1698,"premium":1.77,"spreadPct":0.2535,"score":62.87,"pop":0.8302,"aroc":0.1222,"thetaEff":0.06,"capital":10000,"shieldPrice":105.95,"buffer":8.56},{"ticker":"CSCO","expiry":"2026-03-19","dte":53,"strike":70,"spot":78.69,"delta":-0.1496,"premium":0.77,"spreadPct":0.2745,"score":61.5,"pop":0.8504,"aroc":0.0753,"thetaEff":0.04,"capital":7000,"shieldPrice":71.95,"buffer":8.56},{"ticker":"ADM","expiry":"2026-03-19","dte":53,"strike":60,"spot":68.21,"delta":-0.1462,"premium":0.55,"spreadPct":0.1818,"score":61.4,"pop":0.8538,"aroc":0.0631,"thetaEff":0.03,"capital":6000,"shieldPrice":62.9,"buffer":7.78},{"ticker":"CAG","expiry":"2026-03-19","dte":53,"strike":16,"spot":17.98,"delta":-0.147,"premium":0.17,"spreadPct":0.2857,"score":60.81,"pop":0.853,"aroc":0.0753,"thetaEff":0.04,"capital":1600,"shieldPrice":16.44,"buffer":8.56},{"ticker":"GNRC","expiry":"2026-03-19","dte":53,"strike":140,"spot":170.39,"delta":-0.1404,"premium":2.25,"spreadPct":0.2222,"score":60.45,"pop":0.8596,"aroc":0.1107,"thetaEff":0.06,"capital":14000,"shieldPrice":155.8,"buffer":8.56},{"ticker":"CLX","expiry":"2026-03-19","dte":53,"strike":100,"spot":113.2,"delta":-0.1484,"premium":1.27,"spreadPct":0.1961,"score":60.38,"pop":0.8516,"aroc":0.0878,"thetaEff":0.02,"capital":10000,"shieldPrice":103.07,"buffer":8.95},{"ticker":"CDNS","expiry":"2026-03-19","dte":53,"strike":270,"spot":318.41,"delta":-0.1389,"premium":3.75,"spreadPct":0.24,"score":59.5,"pop":0.8611,"aroc":0.0956,"thetaEff":0.05,"capital":27000,"shieldPrice":287.06,"buffer":9.85},{"ticker":"CARR","expiry":"2026-03-19","dte":53,"strike":50,"spot":57.06,"delta":-0.163,"premium":0.78,"spreadPct":0.3226,"score":57.69,"pop":0.837,"aroc":0.1067,"thetaEff":0.05,"capital":5000,"shieldPrice":52.18,"buffer":8.56},{"ticker":"CMCSA","expiry":"2026-03-19","dte":53,"strike":25,"spot":28.7,"delta":-0.1481,"premium":0.35,"spreadPct":0.3429,"score":57.07,"pop":0.8519,"aroc":0.0964,"thetaEff":0.05,"capital":2500,"shieldPrice":26.24,"buffer":8.56},{"ticker":"GS","expiry":"2026-03-19","dte":53,"strike":820,"spot":929.14,"delta":-0.136,"premium":7.6,"spreadPct":0.1842,"score":56.77,"pop":0.864,"aroc":0.0638,"thetaEff":0.03,"capital":82000,"shieldPrice":849.6,"buffer":8.56},{"ticker":"ALL","expiry":"2026-03-19","dte":53,"strike":175,"spot":194.7,"delta":-0.1553,"premium":1.93,"spreadPct":0.1818,"score":54.72,"pop":0.8447,"aroc":0.0758,"thetaEff":0.03,"capital":17500,"shieldPrice":175.53,"buffer":9.85},{"ticker":"COP","expiry":"2026-03-19","dte":53,"strike":87.5,"spot":99.91,"delta":-0.1302,"premium":0.95,"spreadPct":0.328,"score":54.67,"pop":0.8698,"aroc":0.0744,"thetaEff":0.02,"capital":8750,"shieldPrice":91.36,"buffer":8.56},{"ticker":"CAH","expiry":"2026-03-19","dte":53,"strike":185,"spot":214.03,"delta":-0.1151,"premium":1.55,"spreadPct":0.129,"score":54.07,"pop":0.8849,"aroc":0.0577,"thetaEff":0.04,"capital":18500,"shieldPrice":194.87,"buffer":8.95},{"ticker":"CL","expiry":"2026-03-19","dte":53,"strike":80,"spot":85.78,"delta":-0.1787,"premium":0.75,"spreadPct":0.2667,"score":53.81,"pop":0.8213,"aroc":0.0646,"thetaEff":0.03,"capital":8000,"shieldPrice":78.44,"buffer":8.56},{"ticker":"BLK","expiry":"2026-03-19","dte":53,"strike":990,"spot":1106.37,"delta":-0.139,"premium":9,"spreadPct":0.2,"score":52.92,"pop":0.861,"aroc":0.0626,"thetaEff":0.03,"capital":99000,"shieldPrice":1011.65,"buffer":8.56},{"ticker":"HRL","expiry":"2026-03-19","dte":53,"strike":22,"spot":25.23,"delta":-0.1375,"premium":0.17,"spreadPct":0.2857,"score":50.36,"pop":0.8625,"aroc":0.0548,"thetaEff":0.05,"capital":2200,"shieldPrice":23.07,"buffer":8.56},{"ticker":"CME","expiry":"2026-03-19","dte":53,"strike":260,"spot":284.48,"delta":-0.1771,"premium":3.17,"spreadPct":0.3307,"score":49.67,"pop":0.8229,"aroc":0.0841,"thetaEff":0.02,"capital":26000,"shieldPrice":260.13,"buffer":8.56},{"ticker":"CTVA","expiry":"2026-03-19","dte":53,"strike":65,"spot":73.05,"delta":-0.1698,"premium":0.72,"spreadPct":0.3448,"score":48.29,"pop":0.8302,"aroc":0.0768,"thetaEff":0.04,"capital":6500,"shieldPrice":66.8,"buffer":8.56},{"ticker":"AMT","expiry":"2026-03-19","dte":53,"strike":160,"spot":180.01,"delta":-0.1248,"premium":1.35,"spreadPct":0.2963,"score":44.05,"pop":0.8752,"aroc":0.0581,"thetaEff":0.04,"capital":16000,"shieldPrice":164.6,"buffer":8.56},{"ticker":"AEP","expiry":"2026-03-19","dte":53,"strike":110,"spot":119.39,"delta":-0.1724,"premium":0.95,"spreadPct":0.3158,"score":41.48,"pop":0.8276,"aroc":0.0595,"thetaEff":0.02,"capital":11000,"shieldPrice":109.17,"buffer":8.56},{"ticker":"AZO","expiry":"2026-03-19","dte":53,"strike":3400,"spot":3805.07,"delta":-0.1545,"premium":39.25,"spreadPct":0.293,"score":41.39,"pop":0.8455,"aroc":0.0795,"thetaEff":0.04,"capital":340000,"shieldPrice":3430.45,"buffer":9.85},{"ticker":"ITW","expiry":"2026-03-19","dte":53,"strike":240,"spot":258.63,"delta":-0.1788,"premium":2.4,"spreadPct":0.3333,"score":33.62,"pop":0.8212,"aroc":0.0689,"thetaEff":0.03,"capital":24000,"shieldPrice":233.17,"buffer":9.85}],"AKRON":[{"ticker":"HD","expiry":"2026-02-26","dte":32,"strike":360,"spot":380.63,"delta":-0.2275,"premium":4.5,"spreadPct":0.1333,"score":53.46,"pop":0.7725,"aroc":0.1426,"thetaEff":0.06,"capital":36000,"shieldPrice":354.16,"buffer":6.95},{"ticker":"KHC","expiry":"2026-02-26","dte":32,"strike":22.5,"spot":23.7,"delta":-0.2405,"premium":0.3,"spreadPct":0.2373,"score":45.72,"pop":0.7595,"aroc":0.1495,"thetaEff":0.06,"capital":2250,"shieldPrice":22.12,"buffer":6.65},{"ticker":"JNJ","expiry":"2026-02-26","dte":32,"strike":215,"spot":224.48,"delta":-0.2482,"premium":1.74,"spreadPct":0.2414,"score":33.76,"pop":0.7518,"aroc":0.0923,"thetaEff":0.03,"capital":21500,"shieldPrice":207.31,"buffer":7.65}],"SPRINT":[{"ticker":"AES","expiry":"2026-02-12","dte":18,"strike":14,"spot":14.91,"delta":-0.2272,"premium":0.26,"spreadPct":0.1961,"score":57.46,"pop":0.7728,"aroc":0.3693,"thetaEff":0.04,"capital":1400,"shieldPrice":14.13,"buffer":5.22}],"AGEMA":[{"ticker":"DDOG","expiry":"2026-02-19","dte":25,"strike":130,"spot":138.21,"delta":-0.3291,"premium":6.1,"spreadPct":0.0984,"score":77.25,"pop":0.6709,"aroc":0.6851,"thetaEff":0.15,"capital":13000,"shieldPrice":128.86,"buffer":6.76},{"ticker":"CMG","expiry":"2026-02-19","dte":25,"strike":37.5,"spot":39.64,"delta":-0.3085,"premium":1.16,"spreadPct":0.0862,"score":63.33,"pop":0.6915,"aroc":0.4516,"thetaEff":0.11,"capital":3750,"shieldPrice":37.52,"buffer":5.35},{"ticker":"HUM","expiry":"2026-02-19","dte":25,"strike":200,"spot":207.95,"delta":-0.3698,"premium":9.1,"spreadPct":0.0879,"score":61.58,"pop":0.6302,"aroc":0.6643,"thetaEff":0.13,"capital":20000,"shieldPrice":196.83,"buffer":5.35},{"ticker":"CVS","expiry":"2026-02-19","dte":25,"strike":70,"spot":72.2,"delta":-0.3622,"premium":1.86,"spreadPct":0.1448,"score":58.64,"pop":0.6378,"aroc":0.389,"thetaEff":0.09,"capital":7000,"shieldPrice":67.32,"buffer":6.76},{"ticker":"BIIB","expiry":"2026-02-19","dte":25,"strike":170,"spot":174.28,"delta":-0.3582,"premium":4.2,"spreadPct":0.1429,"score":48.08,"pop":0.6418,"aroc":0.3607,"thetaEff":0.08,"capital":17000,"shieldPrice":162.5,"buffer":6.76},{"ticker":"CTSH","expiry":"2026-02-19","dte":25,"strike":82.5,"spot":84.64,"delta":-0.3754,"premium":2.23,"spreadPct":0.2472,"score":47.71,"pop":0.6246,"aroc":0.3938,"thetaEff":0.08,"capital":8250,"shieldPrice":79.66,"buffer":5.88},{"ticker":"JCI","expiry":"2026-02-19","dte":25,"strike":115,"spot":116.95,"delta":-0.3985,"premium":3.6,"spreadPct":0.1111,"score":50.64,"pop":0.6015,"aroc":0.457,"thetaEff":0.09,"capital":11500,"shieldPrice":110.7,"buffer":5.35},{"ticker":"ADP","expiry":"2026-02-19","dte":25,"strike":250,"spot":254.55,"delta":-0.3843,"premium":5.5,"spreadPct":0.1091,"score":50.75,"pop":0.6157,"aroc":0.3212,"thetaEff":0.07,"capital":25000,"shieldPrice":238.9,"buffer":6.15},{"ticker":"ARES","expiry":"2026-02-19","dte":25,"strike":145,"spot":149.41,"delta":-0.364,"premium":4.45,"spreadPct":0.1573,"score":48.8,"pop":0.636,"aroc":0.4481,"thetaEff":0.1,"capital":14500,"shieldPrice":140.23,"buffer":6.15},{"ticker":"APA","expiry":"2026-02-26","dte":32,"strike":25,"spot":25.83,"delta":-0.3535,"premium":1,"spreadPct":0.2312,"score":62.97,"pop":0.6465,"aroc":0.454,"thetaEff":0.1,"capital":2500,"shieldPrice":23.85,"buffer":7.65},{"ticker":"IP","expiry":"2026-03-05","dte":39,"strike":40,"spot":42.21,"delta":-0.337,"premium":1.42,"spreadPct":0.3158,"score":50.47,"pop":0.663,"aroc":0.3334,"thetaEff":0.07,"capital":4000,"shieldPrice":38.65,"buffer":8.45},{"ticker":"BMY","expiry":"2026-02-19","dte":25,"strike":54,"spot":55.58,"delta":-0.3382,"premium":1,"spreadPct":0.1,"score":52.92,"pop":0.6618,"aroc":0.2704,"thetaEff":0.06,"capital":5400,"shieldPrice":52.16,"buffer":6.15},{"ticker":"DECK","expiry":"2026-02-19","dte":25,"strike":95,"spot":100.16,"delta":-0.338,"premium":4,"spreadPct":0.15,"score":70.25,"pop":0.662,"aroc":0.6147,"thetaEff":0.15,"capital":9500,"shieldPrice":93.39,"buffer":6.76},{"ticker":"CNC","expiry":"2026-02-19","dte":25,"strike":40,"spot":41.34,"delta":-0.3669,"premium":1.88,"spreadPct":0.1333,"score":67.21,"pop":0.6331,"aroc":0.6844,"thetaEff":0.15,"capital":4000,"shieldPrice":38.54,"buffer":6.76},{"ticker":"GPN","expiry":"2026-02-19","dte":25,"strike":70,"spot":73.78,"delta":-0.3082,"premium":2.2,"spreadPct":0.0909,"score":63.23,"pop":0.6918,"aroc":0.4589,"thetaEff":0.12,"capital":7000,"shieldPrice":69.84,"buffer":5.35},{"ticker":"DASH","expiry":"2026-02-19","dte":25,"strike":197.5,"spot":207.38,"delta":-0.3422,"premium":8.12,"spreadPct":0.2277,"score":62.02,"pop":0.6578,"aroc":0.6006,"thetaEff":0.14,"capital":19750,"shieldPrice":193.36,"buffer":6.76},{"ticker":"AKAM","expiry":"2026-02-19","dte":25,"strike":100,"spot":103.25,"delta":-0.3726,"premium":4.35,"spreadPct":0.1609,"score":60.52,"pop":0.6274,"aroc":0.6351,"thetaEff":0.13,"capital":10000,"shieldPrice":97.73,"buffer":5.35},{"ticker":"HPQ","expiry":"2026-02-19","dte":25,"strike":19,"spot":19.36,"delta":-0.3904,"premium":0.57,"spreadPct":0.087,"score":58.83,"pop":0.6096,"aroc":0.4418,"thetaEff":0.09,"capital":1900,"shieldPrice":18.33,"buffer":5.35},{"ticker":"HPE","expiry":"2026-02-26","dte":32,"strike":21,"spot":21.61,"delta":-0.3664,"premium":0.67,"spreadPct":0.1493,"score":58.49,"pop":0.6336,"aroc":0.3639,"thetaEff":0.08,"capital":2100,"shieldPrice":19.96,"buffer":7.65},{"ticker":"CHTR","expiry":"2026-02-19","dte":25,"strike":175,"spot":182.99,"delta":-0.3509,"premium":7.9,"spreadPct":0.2025,"score":57.43,"pop":0.6491,"aroc":0.6591,"thetaEff":0.16,"capital":17500,"shieldPrice":171.74,"buffer":6.15},{"ticker":"BKNG","expiry":"2026-02-19","dte":25,"strike":5000,"spot":5151.77,"delta":-0.3424,"premium":106.35,"spreadPct":0.0837,"score":56.64,"pop":0.6576,"aroc":0.3105,"thetaEff":0.08,"capital":500000,"shieldPrice":4835.09,"buffer":6.15},{"ticker":"BALL","expiry":"2026-02-19","dte":25,"strike":55,"spot":57,"delta":-0.3301,"premium":1.18,"spreadPct":0.1277,"score":54.09,"pop":0.6699,"aroc":0.3119,"thetaEff":0.08,"capital":5500,"shieldPrice":53.95,"buffer":5.35},{"ticker":"APH","expiry":"2026-02-19","dte":25,"strike":160,"spot":166.48,"delta":-0.3397,"premium":5.35,"spreadPct":0.2056,"score":53.48,"pop":0.6603,"aroc":0.4882,"thetaEff":0.11,"capital":16000,"shieldPrice":155.22,"buffer":6.76},{"ticker":"CSGP","expiry":"2026-02-19","dte":25,"strike":65,"spot":66.14,"delta":-0.3972,"premium":2.4,"spreadPct":0.2083,"score":51.89,"pop":0.6028,"aroc":0.5391,"thetaEff":0.11,"capital":6500,"shieldPrice":62.25,"buffer":5.88},{"ticker":"JBL","expiry":"2026-02-19","dte":25,"strike":230,"spot":242.52,"delta":-0.2913,"premium":5.2,"spreadPct":0.1154,"score":51.36,"pop":0.7087,"aroc":0.3301,"thetaEff":0.09,"capital":23000,"shieldPrice":229.56,"buffer":5.35},{"ticker":"HWM","expiry":"2026-02-19","dte":25,"strike":210,"spot":215.63,"delta":-0.3742,"premium":7.2,"spreadPct":0.2222,"score":50.27,"pop":0.6258,"aroc":0.5006,"thetaEff":0.1,"capital":21000,"shieldPrice":201.05,"buffer":6.76},{"ticker":"INTU","expiry":"2026-02-26","dte":32,"strike":530,"spot":545.1,"delta":-0.3682,"premium":18.65,"spreadPct":0.2842,"score":48.46,"pop":0.6318,"aroc":0.4014,"thetaEff":0.09,"capital":53000,"shieldPrice":503.4,"buffer":7.65},{"ticker":"GRMN","expiry":"2026-02-19","dte":25,"strike":200,"spot":204.75,"delta":-0.3854,"premium":6.7,"spreadPct":0.1194,"score":47.36,"pop":0.6146,"aroc":0.4891,"thetaEff":0.09,"capital":20000,"shieldPrice":190.91,"buffer":6.76},{"ticker":"CHRW","expiry":"2026-02-19","dte":25,"strike":175,"spot":180.5,"delta":-0.3789,"premium":6.55,"spreadPct":0.229,"score":47.32,"pop":0.6211,"aroc":0.5465,"thetaEff":0.11,"capital":17500,"shieldPrice":168.3,"buffer":6.76},{"ticker":"D","expiry":"2026-02-19","dte":25,"strike":60,"spot":61.13,"delta":-0.3415,"premium":0.8,"spreadPct":0.25,"score":47.26,"pop":0.6585,"aroc":0.1947,"thetaEff":0.05,"capital":6000,"shieldPrice":57.54,"buffer":5.88},{"ticker":"AON","expiry":"2026-02-19","dte":25,"strike":320,"spot":330.59,"delta":-0.3284,"premium":6.25,"spreadPct":0.144,"score":46.52,"pop":0.6716,"aroc":0.2852,"thetaEff":0.06,"capital":32000,"shieldPrice":310.27,"buffer":6.15},{"ticker":"DE","expiry":"2026-02-19","dte":25,"strike":507.5,"spot":518.98,"delta":-0.3809,"premium":12.47,"spreadPct":0.0842,"score":46.25,"pop":0.6191,"aroc":0.3589,"thetaEff":0.08,"capital":50750,"shieldPrice":483.89,"buffer":6.76},{"ticker":"HON","expiry":"2026-02-19","dte":25,"strike":215,"spot":220.88,"delta":-0.3298,"premium":3.4,"spreadPct":0.1176,"score":46.1,"pop":0.6702,"aroc":0.2309,"thetaEff":0.07,"capital":21500,"shieldPrice":207.3,"buffer":6.15},{"ticker":"BAX","expiry":"2026-02-19","dte":25,"strike":19,"spot":19.57,"delta":-0.3848,"premium":0.85,"spreadPct":0.2353,"score":45.76,"pop":0.6152,"aroc":0.6532,"thetaEff":0.14,"capital":1900,"shieldPrice":18.25,"buffer":6.76},{"ticker":"ARE","expiry":"2026-02-19","dte":25,"strike":55,"spot":58.18,"delta":-0.3093,"premium":1.2,"spreadPct":0.1667,"score":45.67,"pop":0.6907,"aroc":0.3185,"thetaEff":0.08,"capital":5500,"shieldPrice":55.07,"buffer":5.35},{"ticker":"ACGL","expiry":"2026-02-19","dte":25,"strike":90,"spot":93.44,"delta":-0.3093,"premium":1.45,"spreadPct":0.2069,"score":45,"pop":0.6907,"aroc":0.2352,"thetaEff":0.05,"capital":9000,"shieldPrice":87.95,"buffer":5.88},{"ticker":"CRH","expiry":"2026-02-19","dte":25,"strike":120,"spot":123.66,"delta":-0.3423,"premium":2.67,"spreadPct":0.3178,"score":44.33,"pop":0.6577,"aroc":0.3255,"thetaEff":0.07,"capital":12000,"shieldPrice":115.3,"buffer":6.76},{"ticker":"GWW","expiry":"2026-02-19","dte":25,"strike":1030,"spot":1056.37,"delta":-0.3344,"premium":17.1,"spreadPct":0.152,"score":44.18,"pop":0.6656,"aroc":0.2424,"thetaEff":0.06,"capital":103000,"shieldPrice":984.94,"buffer":6.76},{"ticker":"BXP","expiry":"2026-02-19","dte":25,"strike":62.5,"spot":65.25,"delta":-0.2933,"premium":1.1,"spreadPct":0.1818,"score":43.82,"pop":0.7067,"aroc":0.257,"thetaEff":0.07,"capital":6250,"shieldPrice":61.76,"buffer":5.35},{"ticker":"DD","expiry":"2026-02-19","dte":25,"strike":42.5,"spot":44.63,"delta":-0.2962,"premium":0.82,"spreadPct":0.1818,"score":42.37,"pop":0.7038,"aroc":0.2834,"thetaEff":0.09,"capital":4250,"shieldPrice":42.24,"buffer":5.35},{"ticker":"BEN","expiry":"2026-02-19","dte":25,"strike":25,"spot":25.49,"delta":-0.3688,"premium":0.5,"spreadPct":0.2,"score":42.37,"pop":0.6312,"aroc":0.292,"thetaEff":0.07,"capital":2500,"shieldPrice":23.99,"buffer":5.88},{"ticker":"CB","expiry":"2026-02-19","dte":25,"strike":295,"spot":301.41,"delta":-0.3331,"premium":4.15,"spreadPct":0.2169,"score":41.03,"pop":0.6669,"aroc":0.2054,"thetaEff":0.06,"capital":29500,"shieldPrice":283.69,"buffer":5.88},{"ticker":"AMGN","expiry":"2026-02-19","dte":25,"strike":340,"spot":351.32,"delta":-0.3318,"premium":6.47,"spreadPct":0.2703,"score":40.76,"pop":0.6682,"aroc":0.278,"thetaEff":0.05,"capital":34000,"shieldPrice":327.56,"buffer":6.76},{"ticker":"APTV","expiry":"2026-02-19","dte":25,"strike":75,"spot":78.03,"delta":-0.3385,"premium":2.08,"spreadPct":0.3133,"score":39.42,"pop":0.6615,"aroc":0.4039,"thetaEff":0.1,"capital":7500,"shieldPrice":72.75,"buffer":6.76},{"ticker":"HSY","expiry":"2026-02-19","dte":25,"strike":185,"spot":191.71,"delta":-0.3252,"premium":3.23,"spreadPct":0.2326,"score":39.16,"pop":0.6748,"aroc":0.2545,"thetaEff":0.06,"capital":18500,"shieldPrice":178.75,"buffer":6.76},{"ticker":"CI","expiry":"2026-02-19","dte":25,"strike":260,"spot":270.15,"delta":-0.3209,"premium":6.75,"spreadPct":0.2815,"score":38.15,"pop":0.6791,"aroc":0.379,"thetaEff":0.09,"capital":26000,"shieldPrice":251.88,"buffer":6.76},{"ticker":"JBHT","expiry":"2026-02-19","dte":25,"strike":195,"spot":202.78,"delta":-0.2877,"premium":2.7,"spreadPct":0.1111,"score":37.74,"pop":0.7123,"aroc":0.2022,"thetaEff":0.05,"capital":19500,"shieldPrice":191.94,"buffer":5.35},{"ticker":"KDP","expiry":"2026-02-19","dte":25,"strike":27,"spot":27.58,"delta":-0.3539,"premium":0.35,"spreadPct":0.2857,"score":37.31,"pop":0.6461,"aroc":0.1893,"thetaEff":0.05,"capital":2700,"shieldPrice":25.96,"buffer":5.88},{"ticker":"ADSK","expiry":"2026-02-19","dte":25,"strike":260,"spot":268.08,"delta":-0.3353,"premium":5.15,"spreadPct":0.2913,"score":36.95,"pop":0.6647,"aroc":0.2892,"thetaEff":0.07,"capital":26000,"shieldPrice":249.95,"buffer":6.76},{"ticker":"AIG","expiry":"2026-02-19","dte":25,"strike":72,"spot":73.89,"delta":-0.3296,"premium":1.4,"spreadPct":0.2857,"score":36.22,"pop":0.6704,"aroc":0.2839,"thetaEff":0.07,"capital":7200,"shieldPrice":68.89,"buffer":6.76},{"ticker":"ISRG","expiry":"2026-02-19","dte":25,"strike":510,"spot":524.96,"delta":-0.3265,"premium":8.95,"spreadPct":0.324,"score":35.97,"pop":0.6735,"aroc":0.2562,"thetaEff":0.07,"capital":51000,"shieldPrice":494.09,"buffer":5.88},{"ticker":"HLT","expiry":"2026-02-19","dte":25,"strike":290,"spot":295.89,"delta":-0.3675,"premium":5.85,"spreadPct":0.2222,"score":35.42,"pop":0.6325,"aroc":0.2945,"thetaEff":0.07,"capital":29000,"shieldPrice":275.88,"buffer":6.76},{"ticker":"BDX","expiry":"2026-02-19","dte":25,"strike":200,"spot":203.38,"delta":-0.3945,"premium":5.2,"spreadPct":0.1923,"score":35.37,"pop":0.6055,"aroc":0.3796,"thetaEff":0.08,"capital":20000,"shieldPrice":189.63,"buffer":6.76},{"ticker":"CMI","expiry":"2026-02-19","dte":25,"strike":550,"spot":576.15,"delta":-0.2965,"premium":11.6,"spreadPct":0.2069,"score":33.62,"pop":0.7035,"aroc":0.3079,"thetaEff":0.08,"capital":55000,"shieldPrice":537.19,"buffer":6.76},{"ticker":"CCI","expiry":"2026-02-19","dte":25,"strike":85,"spot":86.74,"delta":-0.3817,"premium":1.73,"spreadPct":0.3188,"score":30.64,"pop":0.6183,"aroc":0.2963,"thetaEff":0.07,"capital":8500,"shieldPrice":81.64,"buffer":5.88},{"ticker":"IR","expiry":"2026-02-19","dte":25,"strike":85,"spot":86.23,"delta":-0.3997,"premium":2.38,"spreadPct":0.2737,"score":30.37,"pop":0.6003,"aroc":0.4079,"thetaEff":0.08,"capital":8500,"shieldPrice":80.4,"buffer":6.76},{"ticker":"AXON","expiry":"2026-02-19","dte":25,"strike":580,"spot":609.99,"delta":-0.2976,"premium":15.6,"spreadPct":0.3462,"score":28.84,"pop":0.7024,"aroc":0.3927,"thetaEff":0.1,"capital":58000,"shieldPrice":568.74,"buffer":6.76},{"ticker":"CBOE","expiry":"2026-02-19","dte":25,"strike":260,"spot":267.81,"delta":-0.3254,"premium":3.35,"spreadPct":0.3284,"score":27.63,"pop":0.6746,"aroc":0.1881,"thetaEff":0.05,"capital":26000,"shieldPrice":249.7,"buffer":6.76},{"ticker":"AFL","expiry":"2026-02-19","dte":25,"strike":105,"spot":108.37,"delta":-0.2924,"premium":1.45,"spreadPct":0.2759,"score":25.63,"pop":0.7076,"aroc":0.2016,"thetaEff":0.04,"capital":10500,"shieldPrice":101.04,"buffer":6.76},{"ticker":"ICE","expiry":"2026-02-19","dte":25,"strike":170,"spot":173.29,"delta":-0.3567,"premium":2.73,"spreadPct":0.3486,"score":25.57,"pop":0.6433,"aroc":0.234,"thetaEff":0.06,"capital":17000,"shieldPrice":161.57,"buffer":6.76},{"ticker":"ADI","expiry":"2026-02-19","dte":25,"strike":290,"spot":303.77,"delta":-0.295,"premium":6.15,"spreadPct":0.3415,"score":25.01,"pop":0.705,"aroc":0.3096,"thetaEff":0.09,"capital":29000,"shieldPrice":283.23,"buffer":6.76},{"ticker":"APD","expiry":"2026-02-19","dte":25,"strike":250,"spot":259.08,"delta":-0.3047,"premium":4.65,"spreadPct":0.3226,"score":24.31,"pop":0.6953,"aroc":0.2716,"thetaEff":0.07,"capital":25000,"shieldPrice":241.56,"buffer":6.76},{"ticker":"HUBB","expiry":"2026-02-19","dte":25,"strike":460,"spot":484.43,"delta":-0.2859,"premium":9,"spreadPct":0.3333,"score":20.49,"pop":0.7141,"aroc":0.2857,"thetaEff":0.08,"capital":46000,"shieldPrice":451.67,"buffer":6.76}]};
+
+// Column definitions with grouped headers
+var columns = [
+  // CONTRACT DETAILS group
+  {
+    title: "CONTRACT DETAILS",
+    columns: [
+      { title: "TICKER", field: "ticker", width: 75, headerFilter: "input",
+        formatter: function(c) { return "<span class=\"cell-ticker\">" + c.getValue() + "</span>"; }
+      },
+      { title: "EXPIRY", field: "expiry", width: 95, headerFilter: "input",
+        formatter: function(c) { return "<span class=\"cell-muted\">" + c.getValue() + "</span>"; }
+      },
+      { title: "DTE", field: "dte", width: 55, hozAlign: "right", headerFilter: "input" },
+      { title: "STRIKE", field: "strike", width: 80, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { return "$" + c.getValue().toFixed(2); }
+      },
+      { title: "SPOT", field: "spot", width: 80, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { return "$" + c.getValue().toFixed(2); }
+      }
+    ]
+  },
+  // GREEKS & PREMIUM group
+  {
+    title: "GREEKS & PREMIUM",
+    columns: [
+      { title: "DELTA", field: "delta", width: 70, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { return c.getValue().toFixed(2); }
+      },
+      { title: "PREMIUM", field: "premium", width: 85, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) {
+          var v = c.getValue();
+          var cls = v >= 1.5 ? "cell-teal" : v >= 0.5 ? "cell-green" : "";
+          return "<span class=\"" + cls + "\">$" + v.toFixed(2) + "</span>";
+        }
+      },
+      { title: "SPREAD%", field: "spreadPct", width: 80, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { return (c.getValue() * 100).toFixed(1) + "%"; }
+      }
+    ]
+  },
+  // ANALYSIS group
+  {
+    title: "CONTRACT ANALYSIS",
+    columns: [
+      { title: "SCORE", field: "score", width: 70, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { return c.getValue().toFixed(1) + "/10"; }
+      },
+      { title: "POP", field: "pop", width: 65, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) {
+          var v = c.getValue();
+          if (v == null) return "—";
+          var pct = (v * 100).toFixed(0) + "%";
+          var cls = v >= 0.85 ? "cell-green" : v >= 0.80 ? "cell-yellow" : "";
+          return "<span class=\"" + cls + "\">" + pct + "</span>";
+        }
+      },
+      { title: "ARoC", field: "aroc", width: 70, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) {
+          var v = c.getValue();
+          if (v == null) return "—";
+          var pct = (v * 100).toFixed(1) + "%";
+          var cls = v >= 0.20 ? "cell-green" : v >= 0.15 ? "cell-yellow" : "";
+          return "<span class=\"" + cls + "\">" + pct + "</span>";
+        }
+      },
+      { title: "θ EFF", field: "thetaEff", width: 70, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { var v = c.getValue(); return v != null ? v.toFixed(2) : "—"; }
+      },
+      { title: "CAPITAL", field: "capital", width: 90, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { var v = c.getValue(); return v != null ? "$" + v.toLocaleString() : "—"; }
+      }
+    ]
+  },
+  // SHIELD group
+  {
+    title: "SHIELD",
+    columns: [
+      { title: "FLOOR", field: "shieldPrice", width: 75, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { var v = c.getValue(); return v != null ? "$" + v.toFixed(2) : "—"; }
+      },
+      { title: "BUFFER", field: "buffer", width: 75, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { var v = c.getValue(); return v != null ? v.toFixed(1) + "%" : "—"; }
+      },
+      { title: "RATING", field: "buffer", width: 115,
+        formatter: function(c) {
+          var v = c.getValue();
+          if (v == null) return "—";
+          if (v >= 5) return "<span class=\"rating-fortified\">FORTIFIED 🟢</span>";
+          if (v >= 2) return "<span class=\"rating-constrained\">CONSTRAINED 🟡</span>";
+          return "<span class=\"rating-exposed\">EXPOSED 🔴</span>";
+        }
+      }
+    ]
+  }
+];
+
+// Initialize tables
+["PRIME", "AKRON", "SPRINT", "AGEMA"].forEach(function(engine) {
+  var el = document.getElementById("table-" + engine);
+  if (el && engineData[engine] && engineData[engine].length > 0) {
+    new Tabulator("#table-" + engine, {
+      data: engineData[engine],
+      layout: "fitDataStretch",
+      columns: columns,
+      headerFilterPlaceholder: "",
+      columnHeaderVertAlign: "bottom",
+      initialSort: [{ column: "score", dir: "desc" }]
+    });
+  }
+});
+
+// Filter buttons
+document.querySelectorAll(".filter-btn").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    document.querySelectorAll(".filter-btn").forEach(function(b) { b.classList.remove("active"); });
+    this.classList.add("active");
+    var f = this.dataset.filter;
+    document.querySelectorAll(".engine-section").forEach(function(s) {
+      s.style.display = (f === "all" || s.dataset.engine === f) ? "block" : "none";
+    });
+  });
+});
+  </script>
 </body>
 </html>
