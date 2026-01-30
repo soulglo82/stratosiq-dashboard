@@ -407,7 +407,7 @@ var columns = [
   if (el && engineData[engine] && engineData[engine].length > 0) {
     new Tabulator("#table-" + engine, {
       data: engineData[engine],
-      layout: "fitDataStretch",
+      layout: "fitData",
       columns: columns,
       headerFilterPlaceholder: "",
       columnHeaderVertAlign: "bottom",
