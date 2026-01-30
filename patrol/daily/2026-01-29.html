@@ -389,16 +389,12 @@ var columns = [
       { title: "EXP MOVE", field: "shieldPrice", width: 85, hozAlign: "right", headerFilter: "input",
         formatter: function(c) { var v = c.getValue(); return v != null ? "$" + v.toFixed(2) : "—"; }
       },
-      { title: "BUFFER", field: "buffer", width: 75, hozAlign: "right", headerFilter: "input",
-        formatter: function(c) { var v = c.getValue(); return v != null ? v.toFixed(1) + "%" : "—"; }
-      },
-      { title: "RATING", field: "buffer", width: 115,
+      { title: "BUFFER", field: "buffer", width: 85, hozAlign: "right", headerFilter: "input",
         formatter: function(c) {
           var v = c.getValue();
           if (v == null) return "—";
-          if (v >= 5) return "<span class=\"rating-fortified\">FORTIFIED 🟢</span>";
-          if (v >= 2) return "<span class=\"rating-constrained\">CONSTRAINED 🟡</span>";
-          return "<span class=\"rating-exposed\">EXPOSED 🔴</span>";
+          var cls = v >= 5 ? "cell-green" : v >= 2 ? "cell-yellow" : "cell-red";
+          return "<span class=\"" + cls + "\">" + v.toFixed(1) + "%</span>";
         }
       }
     ]
