@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Strike Dashboard | Wednesday, January 28, 2026</title>
+  <title>Strike Dashboard | Thursday, January 29, 2026</title>
   <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator_midnight.min.css" rel="stylesheet">
   <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -239,7 +239,7 @@ footer {
       <span class="version">STRIKE v4.0</span>
     </div>
     <div class="header-right">
-      <div class="date-info">Wednesday, January 28, 2026</div>
+      <div class="date-info">Thursday, January 29, 2026</div>
       <div class="contract-count">32 earnings opportunities</div>
     </div>
   </header>
@@ -384,7 +384,7 @@ var columns = [
       { title: "EXP MOVE", field: "shieldPrice", width: 85, hozAlign: "right", headerFilter: "input",
         formatter: function(c) { var v = c.getValue(); return v != null ? "$" + v.toFixed(2) : "—"; }
       },
-      { title: "BUFFER", field: "buffer", width: 85, hozAlign: "right", headerFilter: "input",
+      { title: "BUFFER", field: "buffer", width: 65, hozAlign: "right", headerFilter: "input",
         formatter: function(c) {
           var v = c.getValue();
           if (v == null) return "—";
@@ -402,7 +402,7 @@ var columns = [
   if (el && tierData[tier] && tierData[tier].length > 0) {
     new Tabulator("#table-" + tier, {
       data: tierData[tier],
-      layout: "fitDataStretch",
+      layout: "fitData",
       columns: columns,
       headerFilterPlaceholder: "",
       columnHeaderVertAlign: "bottom",
