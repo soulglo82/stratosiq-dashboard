@@ -1,20 +1,20 @@
 {
-  "updated": "2026-01-31T06:01:41.847403-05:00",
-  "total_trades": 255,
-  "wins": 234,
-  "losses": 21,
-  "win_rate": 91.76,
-  "total_pnl": 31027.5,
+  "updated": "2026-01-31T06:06:18.439168-05:00",
+  "total_trades": 338,
+  "wins": 300,
+  "losses": 38,
+  "win_rate": 88.76,
+  "total_pnl": 27538.5,
   "by_product": {
     "STRIKE": {
-      "trades": 255,
-      "win_rate": 91.76,
-      "pnl": 31027.5
+      "trades": 323,
+      "win_rate": 91.02,
+      "pnl": 28616.5
     },
     "PATROL": {
-      "trades": 0,
-      "win_rate": 0,
-      "pnl": 0
+      "trades": 15,
+      "win_rate": 40.0,
+      "pnl": -1078.0
     }
   },
   "by_engine": {
@@ -24,9 +24,9 @@
       "pnl": 0
     },
     "SPRINT": {
-      "trades": 0,
-      "win_rate": 0,
-      "pnl": 0
+      "trades": 15,
+      "win_rate": 40.0,
+      "pnl": -1078.0
     },
     "AKRON": {
       "trades": 0,
@@ -44,6 +44,6 @@
     "breach_rate": 0.0,
     "breach_depth": 0,
     "recovery_rate": 0,
-    "total_with_shield": 254
+    "total_with_shield": 335
   }
 }
