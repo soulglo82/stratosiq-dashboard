@@ -17,7 +17,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 407.4,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TGT",
@@ -37,7 +41,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 155.55,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CMCSA",
@@ -57,7 +65,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 63.91,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CNC",
@@ -77,7 +89,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 133.21,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "RJF",
@@ -97,7 +113,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 97.92,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "NWSA",
@@ -117,7 +137,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 19.21,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "EG",
@@ -137,7 +161,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 1171.48,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "EOG",
@@ -157,7 +185,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 70.98,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "OMC",
@@ -177,7 +209,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 101.1,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "BLDR",
@@ -197,7 +233,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 166.93,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "FISV",
@@ -217,7 +257,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 101,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TROW",
@@ -237,7 +281,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 89.39,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "CAG",
@@ -257,7 +305,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 31.67,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CB",
@@ -277,7 +329,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 321.83,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "MET",
@@ -297,7 +353,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 223.33,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "GL",
@@ -317,7 +377,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 200.05,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TAP",
@@ -337,7 +401,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 82.72,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ACGL",
@@ -357,7 +425,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 122.52,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PRU",
@@ -377,7 +449,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 251.04,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "MTCH",
@@ -397,7 +473,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 57.35,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "AB",
@@ -417,7 +497,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 37.37,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "ABR",
@@ -437,7 +521,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 17.5,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ABTC",
@@ -457,7 +545,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "ACIC",
@@ -477,7 +569,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "ACT",
@@ -497,7 +593,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 47.15,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "ADX",
@@ -517,7 +617,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 54.84,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "AERO",
@@ -537,7 +641,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "AGIO",
@@ -557,7 +665,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "AII",
@@ -577,7 +689,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "AIZ",
@@ -637,7 +753,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 22.15,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "AMWD",
@@ -657,7 +777,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 95.72,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ANGI",
@@ -677,7 +801,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "AOD",
@@ -697,7 +825,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 18.84,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "APA",
@@ -737,7 +869,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 68.06,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "APLE",
@@ -757,7 +893,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 18.86,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "APOG",
@@ -777,7 +917,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 53.26,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ARDT",
@@ -797,7 +941,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 16.2,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ARLP",
@@ -817,7 +965,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 22.78,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "ASB",
@@ -837,7 +989,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 35.99,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ASGN",
@@ -857,7 +1013,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 145.23,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ASIX",
@@ -877,7 +1037,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 12.38,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "ATAT",
@@ -897,7 +1061,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 37.78,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "ATHM",
@@ -917,7 +1085,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 294.2,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "AUNA",
@@ -937,7 +1109,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 6.07,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "AVK",
@@ -957,7 +1133,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 13.28,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "AVTR",
@@ -977,7 +1157,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 15.95,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "AXS",
@@ -997,7 +1181,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 152.16,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "BANR",
@@ -1017,7 +1205,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 84.44,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "BBWI",
@@ -1037,7 +1229,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 51.93,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "BCAL",
@@ -1057,7 +1253,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 6.56,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "BCAT",
@@ -1077,7 +1277,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 13.8,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "BCC",
@@ -1097,7 +1301,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 142.86,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "BDJ",
@@ -1117,7 +1325,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 10.37,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "BKE",
@@ -1137,7 +1349,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 61.38,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "BLBD",
@@ -1157,7 +1373,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 10.36,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "BMNR",
@@ -1177,7 +1397,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "BOE",
@@ -1197,7 +1421,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 11.05,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "BOW",
@@ -1217,7 +1445,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 4.32,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "BRBR",
@@ -1237,7 +1469,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 26.96,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "BRSL",
@@ -1257,7 +1493,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 51.12,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "BST",
@@ -1277,7 +1517,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 94.32,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "BSTZ",
@@ -1297,7 +1541,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 94.32,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "BTBT",
@@ -1317,7 +1565,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "BUSE",
@@ -1337,7 +1589,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 21.65,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "BXC",
@@ -1357,7 +1613,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 199.03,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "BXMX",
@@ -1377,7 +1637,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 26.64,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "BZ",
@@ -1397,7 +1661,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 82.9,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CAL",
@@ -1417,7 +1685,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 43.72,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CALM",
@@ -1437,7 +1709,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 99.93,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CANG",
@@ -1457,7 +1733,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "CASS",
@@ -1477,7 +1757,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 29.21,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "CATY",
@@ -1497,7 +1781,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 58.61,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "CBT",
@@ -1517,7 +1805,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 76.24,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "CCS",
@@ -1537,7 +1829,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 148.26,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CCSI",
@@ -1557,7 +1853,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 82.42,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CFR",
@@ -1577,7 +1877,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 108.94,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "CHA",
@@ -1597,7 +1901,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "CHRD",
@@ -1617,7 +1925,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 141.2,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CHTR",
@@ -1657,7 +1969,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 14.81,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CIG",
@@ -1677,7 +1993,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 22.58,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CII",
@@ -1697,7 +2017,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 14.84,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "CIM",
@@ -1717,7 +2041,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 44.58,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CINT",
@@ -1737,7 +2065,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 7.18,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CIVI",
@@ -1757,7 +2089,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 59.19,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CLM",
@@ -1777,7 +2113,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 18.72,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CLSK",
@@ -1797,7 +2137,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "COLM",
@@ -1817,7 +2161,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 76.72,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "COP",
@@ -1857,7 +2205,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 7.83,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "CRCT",
@@ -1877,7 +2229,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 18.41,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CRF",
@@ -1897,7 +2253,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 17.4,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CROX",
@@ -1917,7 +2277,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 120.53,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CRTO",
@@ -1937,7 +2301,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 40.99,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CSQ",
@@ -1957,7 +2325,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 7.44,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "CTRA",
@@ -2017,7 +2389,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 26.81,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "DECK",
@@ -2057,7 +2433,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 37.38,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "DFIN",
@@ -2077,7 +2457,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 43.23,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "DGICA",
@@ -2097,7 +2481,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 24.53,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "DNOW",
@@ -2117,7 +2505,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 12.74,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "DNP",
@@ -2137,7 +2529,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 5.34,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "DOX",
@@ -2157,7 +2553,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 104.48,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "DSU",
@@ -2177,7 +2577,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 13.07,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "DXC",
@@ -2197,7 +2601,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 95.04,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "EBF",
@@ -2217,7 +2625,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 24.57,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ECAT",
@@ -2237,7 +2649,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 9.48,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "ECC",
@@ -2257,7 +2673,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 5.48,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "EEFT",
@@ -2277,7 +2697,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 219.98,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "EFC",
@@ -2297,7 +2721,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 12.32,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "EFSC",
@@ -2317,7 +2745,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 68.95,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "EIG",
@@ -2337,7 +2769,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 22.61,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "EMBC",
@@ -2357,7 +2793,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 46.92,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "EMD",
@@ -2377,7 +2817,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 18.3,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "EOS",
@@ -2397,7 +2841,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 57.12,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ESNT",
@@ -2417,7 +2865,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 82.05,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ETB",
@@ -2437,7 +2889,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 26.64,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ETD",
@@ -2457,7 +2913,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 38.72,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ETHE",
@@ -2477,7 +2937,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "ETJ",
@@ -2497,7 +2961,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 14.4,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ETOR",
@@ -2517,7 +2985,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 9.6,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "ETV",
@@ -2537,7 +3009,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 26.16,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ETW",
@@ -2557,7 +3033,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 12.24,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "ETY",
@@ -2577,7 +3057,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 23.16,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "EXG",
@@ -2597,7 +3081,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 16.44,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "EXOD",
@@ -2617,7 +3105,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 1.81,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "FBP",
@@ -2637,7 +3129,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 28.99,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "FCF",
@@ -2657,7 +3153,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 15.16,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "FFC",
@@ -2677,7 +3177,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 12.87,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "FFIN",
@@ -2697,7 +3201,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 24.56,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "FG",
@@ -2717,7 +3225,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 301.34,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "FHB",
@@ -2737,7 +3249,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 27.76,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "FHI",
@@ -2757,7 +3273,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 51.06,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "FIHL",
@@ -2777,7 +3297,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 50.91,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "FINV",
@@ -2797,7 +3321,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 39.89,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "FLO",
@@ -2817,7 +3345,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 16.75,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "FLR",
@@ -2837,7 +3369,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 7.15,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "FOR",
@@ -2857,7 +3393,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 46.76,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "FPH",
@@ -2877,7 +3417,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 13.72,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "FRA",
@@ -2897,7 +3441,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 15.49,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "FRME",
@@ -2917,7 +3465,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 53.26,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "FSCO",
@@ -2937,7 +3489,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "FSUN",
@@ -2957,7 +3513,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 41.25,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "G",
@@ -2977,7 +3537,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 48.55,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "GAB",
@@ -2997,7 +3561,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 7.32,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "GDLC",
@@ -3017,7 +3585,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "GDV",
@@ -3037,7 +3609,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 33.84,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "GIII",
@@ -3057,7 +3633,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 44.61,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "GLAD",
@@ -3077,7 +3657,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 30.72,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "GLOB",
@@ -3097,7 +3681,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 41.25,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "GLRE",
@@ -3117,7 +3705,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 9,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "GNW",
@@ -3137,7 +3729,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 16.51,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "GOOS",
@@ -3157,7 +3753,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 16.39,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "GPN",
@@ -3177,7 +3777,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 96,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "GRBK",
@@ -3197,7 +3801,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 10.14,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "GTN",
@@ -3217,7 +3825,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 64.08,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "HAFC",
@@ -3237,7 +3849,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 36.04,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "HAFN",
@@ -3257,7 +3873,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 8.92,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "HCI",
@@ -3277,7 +3897,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 111.86,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "HCKT",
@@ -3297,7 +3921,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 28.16,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "HELE",
@@ -3317,7 +3945,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 57.72,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "HOMB",
@@ -3337,7 +3969,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 23.09,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "HPK",
@@ -3357,7 +3993,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 5.52,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "HRB",
@@ -3377,7 +4017,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 68.69,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "HRMY",
@@ -3397,7 +4041,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 36.58,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "HRTG",
@@ -3417,7 +4065,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 23.74,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "HTD",
@@ -3437,7 +4089,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 19.99,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "HTT",
@@ -3457,7 +4113,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 6,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "HY",
@@ -3477,7 +4137,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 87.47,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "HYT",
@@ -3497,7 +4161,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 5.66,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "IBCP",
@@ -3517,7 +4185,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 40,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "IBOC",
@@ -3537,7 +4209,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 70.62,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "IBTA",
@@ -3557,7 +4233,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "ICL",
@@ -3577,7 +4257,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 6.05,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "IDT",
@@ -3597,7 +4281,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 29.33,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "IFN",
@@ -3617,7 +4305,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 33,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "IGD",
@@ -3637,7 +4329,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 4.8,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "IIIN",
@@ -3657,7 +4353,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 26.04,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "IIM",
@@ -3677,7 +4377,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 16.04,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "IIPR",
@@ -3697,7 +4401,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 77.98,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "INGR",
@@ -3717,7 +4425,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 116.43,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "INMD",
@@ -3737,7 +4449,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 31.63,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "IOSP",
@@ -3757,7 +4473,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 56.77,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "IQ",
@@ -3777,7 +4497,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "KBH",
@@ -3797,7 +4521,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 59.84,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "KFY",
@@ -3817,7 +4545,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 69.07,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "KMPR",
@@ -3837,7 +4569,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "KODK",
@@ -3857,7 +4593,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 3.64,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "KRO",
@@ -3877,7 +4617,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 4.12,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "KYIV",
@@ -3897,7 +4641,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "LBTYK",
@@ -3917,7 +4665,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 80.4,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "LDP",
@@ -3937,7 +4689,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 19.34,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "LGIH",
@@ -3957,7 +4713,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 180.46,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "LNC",
@@ -3977,7 +4737,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 95.28,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "LND",
@@ -3997,7 +4761,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 15.17,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "LNTH",
@@ -4017,7 +4785,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 56.08,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "LOMA",
@@ -4037,7 +4809,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 5247.04,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "LPX",
@@ -4057,7 +4833,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 98.37,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "LU",
@@ -4077,7 +4857,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 196.35,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "LUXE",
@@ -4097,7 +4881,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "LX",
@@ -4117,7 +4905,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 77.76,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "LYB",
@@ -4157,7 +4949,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 38.02,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "MARA",
@@ -4177,7 +4973,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "MBC",
@@ -4197,7 +4997,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 19.65,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "MDXG",
@@ -4217,7 +5021,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "MGPI",
@@ -4237,7 +5045,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 24.39,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "MGRC",
@@ -4257,7 +5069,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 61.49,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "MHK",
@@ -4277,7 +5093,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 150.28,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "MHO",
@@ -4297,7 +5117,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 86.35,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "MNR",
@@ -4317,7 +5141,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 14.9,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "MNSO",
@@ -4337,7 +5165,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 63.16,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "MOMO",
@@ -4357,7 +5189,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 117.44,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "MTDR",
@@ -4377,7 +5213,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 21.35,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "MTG",
@@ -4397,7 +5237,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 32.6,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "MTH",
@@ -4417,7 +5261,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 141.19,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "NBHC",
@@ -4437,7 +5285,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 40.89,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "NBTB",
@@ -4457,7 +5309,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 42.35,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "NBXG",
@@ -4477,7 +5333,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "NEU",
@@ -4497,7 +5357,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 239.52,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "NFJ",
@@ -4517,7 +5381,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 16.56,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "NICE",
@@ -4537,7 +5405,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 119.7,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "NMIH",
@@ -4557,7 +5429,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 43.94,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "NOMD",
@@ -4577,7 +5453,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 33.81,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "NSIT",
@@ -4597,7 +5477,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 169.87,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "NTGR",
@@ -4617,7 +5501,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 7.74,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "NVR",
@@ -4657,7 +5545,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 178.26,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "OFG",
@@ -4677,7 +5569,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 33.89,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "OPRA",
@@ -4697,7 +5593,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 12.61,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "ORC",
@@ -4717,7 +5617,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 7.31,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "ORI",
@@ -4737,7 +5641,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 58.33,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "OSBC",
@@ -4757,7 +5665,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 21.19,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "OSPN",
@@ -4777,7 +5689,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "OXM",
@@ -4797,7 +5713,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 69.5,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "OZK",
@@ -4817,7 +5737,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 79.91,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PB",
@@ -4837,7 +5761,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 72.55,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "PCN",
@@ -4857,7 +5785,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 14.88,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "PFL",
@@ -4877,7 +5809,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 13.41,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PFN",
@@ -4897,7 +5833,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 15.3,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PHK",
@@ -4917,7 +5857,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 4.91,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "PLTK",
@@ -4937,7 +5881,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 19.9,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PNFP",
@@ -4957,7 +5905,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 85.34,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "PNNT",
@@ -4977,7 +5929,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 6,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "PRDO",
@@ -4997,7 +5953,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 38.26,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PRG",
@@ -5017,7 +5977,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 71.07,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PRKS",
@@ -5037,7 +6001,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 54.48,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PTY",
@@ -5057,7 +6025,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 15.24,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "PVH",
@@ -5077,7 +6049,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 145.55,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PXED",
@@ -5097,7 +6073,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 29.12,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "QFIN",
@@ -5117,7 +6097,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 452.65,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "QQQX",
@@ -5137,7 +6121,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 58.56,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "RDN",
@@ -5157,7 +6145,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 40.39,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "REPX",
@@ -5177,7 +6169,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 16.23,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "RGR",
@@ -5197,7 +6193,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 36.46,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "RLI",
@@ -5217,7 +6217,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 49.81,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "RLX",
@@ -5237,7 +6241,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 10.93,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "RNP",
@@ -5257,7 +6265,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 18.36,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "ROCK",
@@ -5277,7 +6289,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 33.47,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "SAFT",
@@ -5297,7 +6313,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 79.6,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "SCSC",
@@ -5317,7 +6337,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 55.8,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "SCVL",
@@ -5337,7 +6361,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 34.18,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "SFD",
@@ -5357,7 +6385,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 19.77,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "SIGA",
@@ -5377,7 +6409,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 10.26,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "SKWD",
@@ -5397,7 +6433,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 61.9,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "SKYW",
@@ -5417,7 +6457,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 59.86,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "SLDE",
@@ -5437,7 +6481,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 8.4,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "SLVM",
@@ -5457,7 +6505,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 79,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "SM",
@@ -5477,7 +6529,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 32.02,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "SMCI",
@@ -5497,7 +6553,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 31.86,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "SMPL",
@@ -5517,7 +6577,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 25.09,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "SRCE",
@@ -5537,7 +6601,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 84.41,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "SRPT",
@@ -5557,7 +6625,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "SSP",
@@ -5577,7 +6649,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 42.48,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "STEW",
@@ -5597,7 +6673,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 6.45,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "STNE",
@@ -5617,7 +6697,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "STRA",
@@ -5637,7 +6721,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 67.93,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "SXC",
@@ -5657,7 +6745,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 12.74,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TASK",
@@ -5677,7 +6769,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 19.02,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TGLS",
@@ -5697,7 +6793,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 16.55,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "TGNA",
@@ -5717,7 +6817,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 56.33,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TH",
@@ -5737,7 +6841,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 11.34,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "THG",
@@ -5757,7 +6865,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 235.4,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "THRM",
@@ -5777,7 +6889,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 34.53,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "THW",
@@ -5797,7 +6913,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 14.45,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "TIGR",
@@ -5817,7 +6937,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 30.56,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TIPT",
@@ -5837,7 +6961,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 65.59,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TMHC",
@@ -5857,7 +6985,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 103.89,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TPH",
@@ -5877,7 +7009,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 59.68,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TWO",
@@ -5897,7 +7033,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 24.08,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TYG",
@@ -5917,7 +7057,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 49.24,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "UFPI",
@@ -5937,7 +7081,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 84.29,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "USA",
@@ -5957,7 +7105,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 13.08,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "USNA",
@@ -5977,7 +7129,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 77.7,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "UTG",
@@ -5997,7 +7153,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 54.24,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "UVE",
@@ -6017,7 +7177,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 54.74,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "UVV",
@@ -6037,7 +7201,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 60.96,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "VC",
@@ -6057,7 +7225,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 42.85,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "VIPS",
@@ -6077,7 +7249,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 195.78,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "VOYA",
@@ -6097,7 +7273,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 110.2,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "VSNT",
@@ -6117,7 +7297,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 97.76,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "VZ",
@@ -6157,7 +7341,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 50.73,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "WB",
@@ -6177,7 +7365,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 40.5,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "WDI",
@@ -6197,7 +7389,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 2.88,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "WIW",
@@ -6217,7 +7413,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 11.94,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "WKC",
@@ -6237,7 +7437,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 14.14,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "WLTH",
@@ -6257,7 +7461,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": null,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "INSUFFICIENT_DATA"
   },
   {
     "Ticker": "WMK",
@@ -6277,7 +7485,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 56.53,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "WPP",
@@ -6297,7 +7509,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 81.62,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "WU",
@@ -6317,7 +7533,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 22.42,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "YALA",
@@ -6337,7 +7557,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 15.45,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "YELP",
@@ -6357,7 +7581,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 37.26,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PGR",
@@ -6377,7 +7605,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 154.38,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "AFL",
@@ -6397,7 +7629,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 83.43,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "HPQ",
@@ -6417,7 +7653,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 60.07,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "APTV",
@@ -6437,7 +7677,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 44.06,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "UHS",
@@ -6457,7 +7701,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 118.27,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "PHM",
@@ -6477,7 +7725,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 110.48,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "LULU",
@@ -6497,7 +7749,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 107.3,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "HIG",
@@ -6517,7 +7773,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 168.27,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "KHC",
@@ -6537,7 +7797,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 41.79,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "TRV",
@@ -6557,7 +7821,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 351.26,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "DHI",
@@ -6577,7 +7845,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 91.87,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "PDD",
@@ -6597,7 +7869,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 284.79,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "CINF",
@@ -6617,7 +7893,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 153.93,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Extended"
   },
   {
     "Ticker": "SYF",
@@ -6637,7 +7917,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 251.07,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "WRB",
@@ -6657,7 +7941,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 73.65,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "ALL",
@@ -6677,7 +7965,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 216.62,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "SWKS",
@@ -6697,7 +7989,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 128.91,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Undervalued"
   },
   {
     "Ticker": "PYPL",
@@ -6717,7 +8013,11 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 59.56,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   },
   {
     "Ticker": "LEN",
@@ -6737,6 +8037,10 @@
     "Dropped_Date": "",
     "Exit_Price": "",
     "Exit_Return_Pct": "",
-    "Updated_At": "2026-01-31 08:22:54"
+    "Updated_At": "2026-01-31 08:22:54",
+    "FMV_Fair": 134.03,
+    "FMV_Conservative": null,
+    "FMV_Premium": null,
+    "FMV_Status": "Fair"
   }
 ]
