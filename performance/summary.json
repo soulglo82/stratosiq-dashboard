@@ -1,0 +1,42 @@
+{
+  "updated": "2026-01-31T02:49:03.598725-05:00",
+  "total_trades": 255,
+  "wins": 234,
+  "losses": 21,
+  "win_rate": 91.76,
+  "total_pnl": 31027.5,
+  "by_product": {
+    "STRIKE": {
+      "trades": 255,
+      "win_rate": 91.76,
+      "pnl": 31027.5
+    },
+    "PATROL": {
+      "trades": 0,
+      "win_rate": 0,
+      "pnl": 0
+    }
+  },
+  "by_engine": {
+    "PRIME": {
+      "trades": 0,
+      "win_rate": 0,
+      "pnl": 0
+    },
+    "SPRINT": {
+      "trades": 0,
+      "win_rate": 0,
+      "pnl": 0
+    },
+    "AKRON": {
+      "trades": 0,
+      "win_rate": 0,
+      "pnl": 0
+    },
+    "AGEMA": {
+      "trades": 0,
+      "win_rate": 0,
+      "pnl": 0
+    }
+  }
+}
