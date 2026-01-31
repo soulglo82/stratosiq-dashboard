@@ -1,0 +1,50 @@
+{
+  "updated": "2026-01-31T02:49:08.012576-05:00",
+  "total_picks": 56,
+  "active_picks": 49,
+  "dropped_picks": 7,
+  "winners": 34,
+  "losers": 19,
+  "win_rate": 60.71,
+  "avg_return": 2.73,
+  "active_avg_return": 1.32,
+  "dropped_avg_return": 12.56,
+  "by_sector": {
+    "Consumer Defensive": {
+      "count": 5,
+      "avg_return": 6.09
+    },
+    "Consumer Cyclical": {
+      "count": 8,
+      "avg_return": 0.63
+    },
+    "Energy": {
+      "count": 4,
+      "avg_return": 7.14
+    },
+    "Financial Services": {
+      "count": 22,
+      "avg_return": 0.5
+    },
+    "Technology": {
+      "count": 4,
+      "avg_return": 1.13
+    },
+    "Industrials": {
+      "count": 2,
+      "avg_return": 3.82
+    },
+    "Communication Services": {
+      "count": 5,
+      "avg_return": 1.44
+    },
+    "Basic Materials": {
+      "count": 2,
+      "avg_return": 10.5
+    },
+    "Healthcare": {
+      "count": 4,
+      "avg_return": 9.3
+    }
+  }
+}
