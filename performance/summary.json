@@ -1,5 +1,5 @@
 {
-  "updated": "2026-01-31T03:04:18.639622-05:00",
+  "updated": "2026-01-31T03:49:21.624518-05:00",
   "total_trades": 255,
   "wins": 234,
   "losses": 21,
@@ -38,5 +38,12 @@
       "win_rate": 0,
       "pnl": 0
     }
+  },
+  "shield": {
+    "accuracy": 0.0,
+    "breach_rate": 0.0,
+    "breach_depth": 0,
+    "recovery_rate": 0,
+    "total_with_shield": 254
   }
 }
