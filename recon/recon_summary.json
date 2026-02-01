@@ -1,50 +1,50 @@
 {
-  "updated": "2026-02-01T01:30:16.667712-05:00",
+  "updated": "2026-02-01T01:34:50.244866-05:00",
   "total_picks": 446,
   "active_picks": 198,
   "dropped_picks": 248,
   "winners": 41,
   "losers": 25,
   "win_rate": 9.19,
-  "avg_return": 0.01,
-  "active_avg_return": 0.0,
-  "dropped_avg_return": 0.01,
+  "avg_return": 0.75,
+  "active_avg_return": 0.49,
+  "dropped_avg_return": 0.97,
   "by_sector": {
     "Energy": {
       "count": 36,
-      "avg_return": 0.05
+      "avg_return": 4.55
     },
     "Financial Services": {
       "count": 181,
-      "avg_return": 0.0
+      "avg_return": 0.37
     },
     "Healthcare": {
       "count": 18,
-      "avg_return": 0.02
+      "avg_return": 1.52
     },
     "Consumer Defensive": {
       "count": 28,
-      "avg_return": 0.01
+      "avg_return": 1.05
     },
     "Consumer Cyclical": {
       "count": 53,
-      "avg_return": 0.0
+      "avg_return": 0.18
     },
     "Basic Materials": {
       "count": 19,
-      "avg_return": 0.01
+      "avg_return": 1.16
     },
     "Communication Services": {
       "count": 24,
-      "avg_return": 0.01
+      "avg_return": 0.57
     },
     "Industrials": {
       "count": 37,
-      "avg_return": 0.0
+      "avg_return": 0.35
     },
     "Technology": {
       "count": 36,
-      "avg_return": -0.0
+      "avg_return": -0.26
     },
     "Real Estate": {
       "count": 10,
@@ -54,5 +54,87 @@
       "count": 4,
       "avg_return": 0.0
     }
-  }
+  },
+  "top_performers": [
+    {
+      "ticker": "SLB",
+      "company": "SLB N.V.",
+      "sector": "Energy",
+      "return_pct": 45.71,
+      "entry_score": 6.89,
+      "status": "DROPPED"
+    },
+    {
+      "ticker": "HAL",
+      "company": "Halliburton Company",
+      "sector": "Energy",
+      "return_pct": 36.32,
+      "entry_score": 7.38,
+      "status": "DROPPED"
+    },
+    {
+      "ticker": "SOLS",
+      "company": "Solstice Advanced Materials Inc.",
+      "sector": "Financial Services",
+      "return_pct": 34.02,
+      "entry_score": 6.5,
+      "status": "DROPPED"
+    },
+    {
+      "ticker": "MOH",
+      "company": "Molina Healthcare, Inc.",
+      "sector": "Healthcare",
+      "return_pct": 22.36,
+      "entry_score": 7.68,
+      "status": "ACTIVE"
+    },
+    {
+      "ticker": "COP",
+      "company": "ConocoPhillips",
+      "sector": "Energy",
+      "return_pct": 20.22,
+      "entry_score": 6.79,
+      "status": "DROPPED"
+    },
+    {
+      "ticker": "TGT",
+      "company": "Target Corporation",
+      "sector": "Consumer Defensive",
+      "return_pct": 19.38,
+      "entry_score": 6.5,
+      "status": "ACTIVE"
+    },
+    {
+      "ticker": "DECK",
+      "company": "Deckers Outdoor Corporation",
+      "sector": "Consumer Cyclical",
+      "return_pct": 18.9,
+      "entry_score": 6.46,
+      "status": "DROPPED"
+    },
+    {
+      "ticker": "XOM",
+      "company": "Exxon Mobil Corporation",
+      "sector": "Energy",
+      "return_pct": 18.11,
+      "entry_score": 6.48,
+      "status": "DROPPED"
+    },
+    {
+      "ticker": "IVZ",
+      "company": "Invesco Ltd.",
+      "sector": "Financial Services",
+      "return_pct": 18.1,
+      "entry_score": 6.01,
+      "status": "DROPPED"
+    },
+    {
+      "ticker": "LKQ",
+      "company": "LKQ Corporation",
+      "sector": "Consumer Cyclical",
+      "return_pct": 14.29,
+      "entry_score": 6.18,
+      "status": "DROPPED"
+    }
+  ]
 }
