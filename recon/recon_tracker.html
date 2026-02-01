@@ -35,7 +35,7 @@
     </nav>
     <h1>Recon Performance Tracker</h1>
     <div class="subtitle">Historical stock picks and performance metrics</div>
-    <div class="updated">Updated: 2026-02-01 01:30 ET</div>
+    <div class="updated">Updated: 2026-02-01 01:34 ET</div>
 
     <div class="filters">
         <label>Status: <select id="filter-status">
@@ -97,7 +97,7 @@
                     formatter: function(cell) {
                         const v = cell.getValue();
                         if (v == null || v === "") return "—";
-                        const num = parseFloat(v);
+                        const num = parseFloat(v) * 100;  // Convert decimal to percentage
                         const cls = num >= 0 ? "cell-green" : "cell-red";
                         const sign = num >= 0 ? "+" : "";
                         return '<span class="' + cls + '">' + sign + num.toFixed(2) + '%</span>';
@@ -122,7 +122,7 @@
                     formatter: function(cell) {
                         const v = cell.getValue();
                         if (v == null || v === "") return "—";
-                        const num = parseFloat(v);
+                        const num = parseFloat(v) * 100;  // Convert decimal to percentage
                         const cls = num >= 0 ? "cell-green" : "cell-red";
                         return '<span class="' + cls + '">' + num.toFixed(1) + '%</span>';
                     }
