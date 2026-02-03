@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-01T01:34:45.643818-05:00",
+  "updated": "2026-02-03T16:04:44.229455-05:00",
   "total_trades": 338,
   "wins": 300,
   "losses": 38,
@@ -34,6 +34,16 @@
       "pnl": 0
     },
     "AGEMA": {
+      "trades": 0,
+      "win_rate": 0,
+      "pnl": 0
+    },
+    "ALPHA": {
+      "trades": 0,
+      "win_rate": 0,
+      "pnl": 0
+    },
+    "CORE": {
       "trades": 0,
       "win_rate": 0,
       "pnl": 0
