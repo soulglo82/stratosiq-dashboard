@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strike Dashboard | Wednesday, February 4, 2026</title>
+  <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator_midnight.min.css" rel="stylesheet">
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-dark: #0d1117;
+  --bg-card: #161b22;
+  --bg-input: #21262d;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --accent-green: #3fb950;
+  --accent-teal: #39d353;
+  --accent-yellow: #d29922;
+  --accent-orange: #db6d28;
+  --accent-red: #f85149;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text);
+  padding: 16px 24px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent-orange);
+  letter-spacing: 1px;
+}
+
+.version {
+  background: var(--accent-orange);
+  color: #000;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.date-info {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.contract-count {
+  font-size: 13px;
+  color: var(--accent-orange);
+  font-weight: 500;
+}
+
+.risk-notice {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 16px;
+  margin-bottom: 14px;
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 7px 14px;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filter-btn:hover { background: var(--border); }
+.filter-btn.active { background: var(--accent-orange); color: #000; font-weight: 600; }
+.filter-btn.low.active { background: #238636; }
+.filter-btn.moderate.active { background: #9e6a03; }
+.filter-btn.higher.active { background: #bd5c00; }
+
+.tier-section {
+  margin-bottom: 32px;
+}
+
+.tier-section h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tier-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+/* Tabulator Customizations (matching Patrol) */
+.tabulator {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  width: auto !important;
+}
+
+.tabulator-header {
+  background: var(--bg-input) !important;
+  border-bottom: 2px solid var(--border) !important;
+}
+
+.tabulator-col {
+  background: transparent !important;
+  border-right: 1px solid var(--border) !important;
+}
+
+.tabulator-col-group .tabulator-col-group-cols {
+  border-right: 2px solid var(--border) !important;
+}
+
+.tabulator-col-title {
+  font-weight: 600 !important;
+  font-size: 11px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: var(--text-muted) !important;
+}
+
+.tabulator-col-group-cols .tabulator-col-title {
+  font-size: 10px !important;
+}
+
+.tabulator-header-filter input {
+  background: var(--bg-dark) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  color: var(--text) !important;
+  padding: 4px 6px !important;
+  font-size: 11px !important;
+}
+
+.tabulator-row {
+  background: transparent !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.tabulator-row:hover {
+  background: rgba(255,255,255,0.03) !important;
+}
+
+.tabulator-cell {
+  border-right: 1px solid rgba(48,54,61,0.5) !important;
+  padding: 8px 10px !important;
+}
+
+.cell-ticker { font-weight: 700; }
+.cell-muted { color: var(--text-muted); }
+.cell-green { color: var(--accent-green); font-weight: 600; }
+.cell-teal { color: var(--accent-teal); font-weight: 600; }
+.cell-yellow { color: var(--accent-yellow); }
+.cell-orange { color: var(--accent-orange); font-weight: 600; }
+.cell-red { color: var(--accent-red); }
+
+.rating-fortified { color: var(--accent-green); font-weight: 600; }
+.rating-constrained { color: var(--accent-yellow); font-weight: 600; }
+.rating-exposed { color: var(--accent-red); font-weight: 600; }
+
+.metrics-guide {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 24px;
+}
+
+.metrics-guide h3 {
+  color: var(--text);
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.metrics-guide p {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.metrics-guide strong {
+  color: var(--text);
+}
+
+footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 11px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  margin-top: 20px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="logo">STRATOSIQ</div>
+      <span class="version">STRIKE v4.0</span>
+    </div>
+    <div class="header-right">
+      <div class="date-info">Wednesday, February 4, 2026</div>
+      <div class="contract-count">18 earnings opportunities</div>
+    </div>
+  </header>
+  <div class="risk-notice">
+    <em>⚡ Earnings-driven opportunities ordered by risk posture — Low, Moderate, Elevated — reflecting probability of profit.</em>
+  </div>
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All (18)</button>
+    <button class="filter-btn low" data-filter="LOW">🟢 Low Risk (0)</button>
+    <button class="filter-btn moderate" data-filter="MODERATE">🟡 Moderate (18)</button>
+    <button class="filter-btn higher" data-filter="HIGHER">🟠 Elevated (0)</button>
+  </div>
+  <main>
+    <section class="tier-section" data-tier="MODERATE">
+      <h2>🟡 MODERATE RISK — BALANCED</h2>
+      <p class="tier-desc">Balanced risk/reward with 85-89% probability of profit. Good yield potential with reasonable protection.</p>
+      <div id="table-MODERATE"></div>
+    </section>
+  </main>
+  <div class="metrics-guide">
+    <h3>📖 Understanding Your Metrics</h3>
+    <p><strong>Score (0–10):</strong> Quality score based on 6 factors (delta, IVP, liquidity, sigma distance, DTE, return on margin).</p>
+    <p><strong>Delta:</strong> Market-implied probability proxy. Example: –0.15 delta ≈ ~85% chance the option expires worthless.</p>
+    <p><strong>Days to Earnings:</strong> Number of days until the company's earnings announcement — the key catalyst for Strike strategies.</p>
+    <p><strong>IVP:</strong> IV Percentile — where current implied volatility ranks over the past year (35-80% is optimal for premium selling).</p>
+    <p><strong>Shield:</strong> Estimated danger-floor price based on volatility and time.<br>🟢 <strong>FORTIFIED</strong> (≥5% buffer) · 🟡 <strong>CONSTRAINED</strong> (2-5%) · 🔴 <strong>EXPOSED</strong> (&lt;2%)</p>
+    <p><strong>ARoC:</strong> Annualized Return on Capital at risk.</p>
+    <p><strong>Capital:</strong> Cash required to hold the position (cash-secured puts = strike × 100 shares).</p>
+  </div>
+  <footer>Generated by StratosIQ Strike · Earnings-driven options discovery</footer>
+  <script src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
+  <script>
+var tierData = {"LOW":[],"MODERATE":[{"ticker":"CEG","expiry":"2026-02-19","dte":18,"daysToEarnings":14,"strike":240,"spot":267.97,"delta":-0.1796,"ivp":71,"premium":3.45,"spreadPct":14.49,"score":6.1,"pop":82,"aroc":0.2704,"thetaEff":10.42,"capital":24000,"shieldPrice":250,"buffer":3.73,"riskTier":"MODERATE"},{"ticker":"COIN","expiry":"2026-02-12","dte":11,"daysToEarnings":9,"strike":155,"spot":179.84,"delta":-0.1421,"ivp":43,"premium":1.97,"spreadPct":9.14,"score":5.6,"pop":85.8,"aroc":0.4025,"thetaEff":22.03,"capital":15500,"shieldPrice":159.97,"buffer":2.76,"riskTier":"MODERATE"},{"ticker":"FSLR","expiry":"2026-02-26","dte":25,"daysToEarnings":21,"strike":215,"spot":238.82,"delta":-0.246,"ivp":71,"premium":6.25,"spreadPct":12.8,"score":5.6,"pop":75.4,"aroc":0.3973,"thetaEff":12.31,"capital":21500,"shieldPrice":218.04,"buffer":1.27,"riskTier":"MODERATE"},{"ticker":"HOOD","expiry":"2026-02-12","dte":11,"daysToEarnings":7,"strike":81,"spot":87.08,"delta":-0.2933,"ivp":36,"premium":2.71,"spreadPct":4.81,"score":5.6,"pop":70.7,"aroc":0.010814999999999998,"thetaEff":28.99,"capital":8100,"shieldPrice":74.95,"buffer":-6.95,"riskTier":"MODERATE"},{"ticker":"OXY","expiry":"2026-02-19","dte":18,"daysToEarnings":15,"strike":43.5,"spot":45.24,"delta":-0.2968,"ivp":72,"premium":0.79,"spreadPct":8.81,"score":5.1,"pop":70.3,"aroc":0.3543,"thetaEff":10.23,"capital":4350,"shieldPrice":43.7,"buffer":0.44,"riskTier":"MODERATE"},{"ticker":"ABNB","expiry":"2026-02-12","dte":11,"daysToEarnings":9,"strike":115,"spot":122.1,"delta":-0.2946,"ivp":76,"premium":2.98,"spreadPct":14.77,"score":5,"pop":70.5,"aroc":0.7964,"thetaEff":22.12,"capital":11500,"shieldPrice":108.26,"buffer":-5.52,"riskTier":"MODERATE"},{"ticker":"SMCI","expiry":"2026-02-26","dte":25,"daysToEarnings":21,"strike":26,"spot":29.78,"delta":-0.2461,"ivp":56,"premium":1.25,"spreadPct":8,"score":5,"pop":75.4,"aroc":0.6738,"thetaEff":18.81,"capital":2600,"shieldPrice":24.12,"buffer":-6.3,"riskTier":"MODERATE"},{"ticker":"PAYC","expiry":"2026-02-19","dte":18,"daysToEarnings":8,"strike":115,"spot":124.37,"delta":-0.2897,"ivp":96,"premium":4.25,"spreadPct":11.76,"score":4.8,"pop":71,"aroc":0.7053,"thetaEff":19.3,"capital":11500,"shieldPrice":106.01,"buffer":-7.23,"riskTier":"MODERATE"},{"ticker":"EOG","expiry":"2026-02-26","dte":25,"daysToEarnings":21,"strike":106,"spot":110.41,"delta":-0.2996,"ivp":83,"premium":2.05,"spreadPct":14.63,"score":4.5,"pop":70,"aroc":0.2617,"thetaEff":7.6,"capital":10600,"shieldPrice":106.69,"buffer":0.63,"riskTier":"MODERATE"},{"ticker":"PANW","expiry":"2026-02-12","dte":11,"daysToEarnings":9,"strike":155,"spot":166.25,"delta":-0.1855,"ivp":98,"premium":1.38,"spreadPct":13.04,"score":3.9,"pop":81.4,"aroc":0.2762,"thetaEff":11.54,"capital":15500,"shieldPrice":149.95,"buffer":-3.04,"riskTier":"MODERATE"},{"ticker":"ZTS","expiry":"2026-02-19","dte":18,"daysToEarnings":9,"strike":115,"spot":122.37,"delta":-0.2718,"ivp":97,"premium":2.58,"spreadPct":9.71,"score":3.9,"pop":72.8,"aroc":0.432,"thetaEff":13.56,"capital":11500,"shieldPrice":111.1,"buffer":-3.19,"riskTier":"MODERATE"},{"ticker":"F","expiry":"2026-02-12","dte":11,"daysToEarnings":7,"strike":13,"spot":13.71,"delta":-0.2773,"ivp":66,"premium":0.21,"spreadPct":4.65,"score":3.5,"pop":72.3,"aroc":0.536,"thetaEff":13.24,"capital":1300,"shieldPrice":12.55,"buffer":-3.29,"riskTier":"MODERATE"},{"ticker":"NEM","expiry":"2026-02-19","dte":18,"daysToEarnings":16,"strike":105,"spot":117.13,"delta":-0.2069,"ivp":99,"premium":2.04,"spreadPct":12.75,"score":3.5,"pop":79.3,"aroc":0.3689,"thetaEff":14.1,"capital":10500,"shieldPrice":108.82,"buffer":3.26,"riskTier":"MODERATE"},{"ticker":"WMT","expiry":"2026-02-19","dte":18,"daysToEarnings":16,"strike":122,"spot":127.81,"delta":-0.2547,"ivp":73,"premium":1.7,"spreadPct":8.85,"score":3.2,"pop":74.5,"aroc":0.2693,"thetaEff":9.14,"capital":12200,"shieldPrice":119.7,"buffer":-1.8,"riskTier":"MODERATE"},{"ticker":"APP","expiry":"2026-02-12","dte":11,"daysToEarnings":8,"strike":415,"spot":461.96,"delta":-0.268,"ivp":69,"premium":16.8,"spreadPct":3.57,"score":3.1,"pop":73.2,"aroc":0.013193,"thetaEff":37.22,"capital":41500,"shieldPrice":362.34,"buffer":-11.4,"riskTier":"MODERATE"},{"ticker":"MSI","expiry":"2026-02-19","dte":18,"daysToEarnings":8,"strike":390,"spot":409.08,"delta":-0.2409,"ivp":78,"premium":4.3,"spreadPct":13.95,"score":3,"pop":75.9,"aroc":0.208,"thetaEff":7.85,"capital":39000,"shieldPrice":383.42,"buffer":-1.61,"riskTier":"MODERATE"},{"ticker":"SHOP","expiry":"2026-02-12","dte":11,"daysToEarnings":8,"strike":110,"spot":119.44,"delta":-0.2787,"ivp":63,"premium":3.9,"spreadPct":7.69,"score":2.3,"pop":72.1,"aroc":0.011312,"thetaEff":33.22,"capital":11000,"shieldPrice":97.93,"buffer":-10.1,"riskTier":"MODERATE"},{"ticker":"CVNA","expiry":"2026-02-19","dte":18,"daysToEarnings":15,"strike":360,"spot":410.63,"delta":-0.2441,"ivp":81,"premium":15.98,"spreadPct":10.33,"score":2,"pop":75.6,"aroc":0.8534,"thetaEff":25.6,"capital":36000,"shieldPrice":326.63,"buffer":-8.13,"riskTier":"MODERATE"}],"HIGHER":[]};
+
+// Column definitions with grouped headers (matching Patrol style)
+var columns = [
+  // CONTRACT DETAILS group
+  {
+    title: "CONTRACT DETAILS",
+    columns: [
+      { title: "TICKER", field: "ticker", width: 75, headerFilter: "input",
+        formatter: function(c) { return "<span class=\"cell-ticker\">" + c.getValue() + "</span>"; }
+      },
+      { title: "EXPIRY", field: "expiry", width: 95, headerFilter: "input",
+        formatter: function(c) { return "<span class=\"cell-muted\">" + c.getValue() + "</span>"; }
+      },
+      { title: "DTE", field: "dte", width: 55, hozAlign: "right", headerFilter: "input" },
+      { title: "STRIKE", field: "strike", width: 80, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { return "$" + c.getValue().toFixed(2); }
+      },
+      { title: "SPOT", field: "spot", width: 80, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { return "$" + c.getValue().toFixed(2); }
+      }
+    ]
+  },
+  // EARNINGS & IV group (Strike-specific)
+  {
+    title: "EARNINGS & IV",
+    columns: [
+      { title: "DAYS TO EARN", field: "daysToEarnings", width: 100, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) {
+          var v = c.getValue();
+          var cls = v <= 7 ? "cell-orange" : v <= 14 ? "cell-yellow" : "";
+          return "<span class=\"" + cls + "\">" + v + " days</span>";
+        }
+      },
+      { title: "IVP", field: "ivp", width: 65, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) {
+          var v = c.getValue();
+          if (v == null) return "—";
+          var cls = v >= 50 ? "cell-green" : v >= 35 ? "cell-yellow" : "";
+          return "<span class=\"" + cls + "\">" + v.toFixed(0) + "%</span>";
+        }
+      }
+    ]
+  },
+  // GREEKS & PREMIUM group
+  {
+    title: "GREEKS & PREMIUM",
+    columns: [
+      { title: "DELTA", field: "delta", width: 70, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { return c.getValue().toFixed(2); }
+      },
+      { title: "PREMIUM", field: "premium", width: 85, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) {
+          var v = c.getValue();
+          var cls = v >= 1.5 ? "cell-teal" : v >= 0.5 ? "cell-green" : "";
+          return "<span class=\"" + cls + "\">$" + v.toFixed(2) + "</span>";
+        }
+      },
+      { title: "SPREAD%", field: "spreadPct", width: 80, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) {
+          var v = c.getValue();
+          var cls = v > 15 ? "cell-red" : v > 10 ? "cell-yellow" : "";
+          return "<span class=\"" + cls + "\">" + v.toFixed(1) + "%</span>";
+        }
+      }
+    ]
+  },
+  // CONTRACT ANALYSIS group
+  {
+    title: "CONTRACT ANALYSIS",
+    columns: [
+      { title: "SCORE", field: "score", width: 70, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { return (c.getValue()).toFixed(1) + "/10"; }
+      },
+      { title: "POP", field: "pop", width: 65, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) {
+          var v = c.getValue();
+          if (v == null || v === 0) return "—";
+          var pct = v.toFixed(0) + "%";
+          var cls = v >= 85 ? "cell-green" : v >= 80 ? "cell-yellow" : "";
+          return "<span class=\"" + cls + "\">" + pct + "</span>";
+        }
+      },
+      { title: "ARoC", field: "aroc", width: 70, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) {
+          var v = c.getValue();
+          if (v == null || v === 0) return "—";
+          var pct = (v * 100).toFixed(1) + "%";
+          var cls = v >= 0.20 ? "cell-green" : v >= 0.15 ? "cell-yellow" : "";
+          return "<span class=\"" + cls + "\">" + pct + "</span>";
+        }
+      },
+      { title: "θ EFF", field: "thetaEff", width: 70, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { var v = c.getValue(); return (v != null && v !== 0) ? v.toFixed(2) : "—"; }
+      },
+      { title: "CAPITAL", field: "capital", width: 90, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { var v = c.getValue(); return v != null ? "$" + v.toLocaleString() : "—"; }
+      }
+    ]
+  },
+  // SHIELD group
+  {
+    title: "SHIELD",
+    columns: [
+      { title: "EXP MOVE", field: "shieldPrice", width: 85, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) { var v = c.getValue(); return v != null ? "$" + v.toFixed(2) : "—"; }
+      },
+      { title: "BUFFER", field: "buffer", width: 65, hozAlign: "right", headerFilter: "input",
+        formatter: function(c) {
+          var v = c.getValue();
+          if (v == null) return "—";
+          var cls = v >= 5 ? "cell-green" : v >= 2 ? "cell-yellow" : "cell-red";
+          return "<span class=\"" + cls + "\">" + v.toFixed(1) + "%</span>";
+        }
+      }
+    ]
+  }
+];
+
+// Initialize tables for each risk tier
+["LOW", "MODERATE", "HIGHER"].forEach(function(tier) {
+  var el = document.getElementById("table-" + tier);
+  if (el && tierData[tier] && tierData[tier].length > 0) {
+    new Tabulator("#table-" + tier, {
+      data: tierData[tier],
+      layout: "fitData",
+      columns: columns,
+      headerFilterPlaceholder: "",
+      columnHeaderVertAlign: "bottom",
+      initialSort: [{ column: "score", dir: "desc" }]
+    });
+  }
+});
+
+// Filter buttons
+document.querySelectorAll(".filter-btn").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    document.querySelectorAll(".filter-btn").forEach(function(b) { b.classList.remove("active"); });
+    this.classList.add("active");
+    var f = this.dataset.filter;
+    document.querySelectorAll(".tier-section").forEach(function(s) {
+      s.style.display = (f === "all" || s.dataset.tier === f) ? "block" : "none";
+    });
+  });
+});
+  </script>
+</body>
+</html>
