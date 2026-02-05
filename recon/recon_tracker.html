@@ -140,6 +140,24 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
   border-top: 1px solid var(--border) !important;
   color: var(--muted);
 }
+
+/* Force dark surface on inner table elements */
+.tabulator .tabulator-tableholder,
+.tabulator .tabulator-tableholder .tabulator-table,
+.tabulator .tabulator-tableholder .tabulator-table .tabulator-row {
+  background: transparent !important;
+}
+
+/* Header filter styling */
+.tabulator .tabulator-header-filter input,
+.tabulator .tabulator-header-filter select {
+  background: rgba(0,0,0,0.18) !important;
+  color: rgba(255,255,255,0.85) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+  font-size: 12px !important;
+}
     </style>
 </head>
 <body>
@@ -154,7 +172,7 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
       <div>
         <h1>Recon Performance Tracker</h1>
         <div class="subtitle">Historical stock picks and performance metrics</div>
-        <div class="updated">Updated: 2026-02-05 10:35 ET</div>
+        <div class="updated">Updated: 2026-02-05 10:46 ET</div>
       </div>
     </div>
 
@@ -385,7 +403,7 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
     // ---------- Table ----------
     const table = new Tabulator("#recon-table", {
       data: data,
-      layout: "fitDataStretch",
+      layout: "fitColumns",
       height: "calc(100vh - 260px)",
       rowClick: function(e, row) { openDrawer(row); },
       columns: [
