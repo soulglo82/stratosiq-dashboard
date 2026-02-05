@@ -190,7 +190,7 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
       <div>
         <h1>Recon Performance Tracker</h1>
         <div class="subtitle">Historical stock picks and performance metrics</div>
-        <div class="updated">Updated: 2026-02-05 11:00 ET</div>
+        <div class="updated">Updated: 2026-02-05 11:16 ET</div>
       </div>
     </div>
 
@@ -450,24 +450,39 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
     });
 
     // ---------- Filters ----------
+    let activeFilters = { status: null, sector: null, search: null };
+
+    function applyFilters() {
+      table.clearFilter();
+      if (activeFilters.status) {
+        table.addFilter("Status", "=", activeFilters.status);
+      }
+      if (activeFilters.sector) {
+        table.addFilter("Sector", "=", activeFilters.sector);
+      }
+      if (activeFilters.search) {
+        const q = activeFilters.search.toLowerCase();
+        table.addFilter(function(data) {
+          const t = (data.Ticker || "").toLowerCase();
+          const c = (data.Company || "").toLowerCase();
+          return t.includes(q) || c.includes(q);
+        });
+      }
+    }
+
     document.getElementById("filter-status").addEventListener("change", function() {
-      if (this.value) table.setFilter("Status", "=", this.value);
-      else table.clearFilter("Status");
+      activeFilters.status = this.value || null;
+      applyFilters();
     });
 
     document.getElementById("filter-sector").addEventListener("change", function() {
-      if (this.value) table.setFilter("Sector", "=", this.value);
-      else table.clearFilter("Sector");
+      activeFilters.sector = this.value || null;
+      applyFilters();
     });
 
     document.getElementById("filter-search").addEventListener("input", function() {
-      const q = (this.value || "").toLowerCase().trim();
-      if (!q) { table.clearFilter(); return; }
-      table.setFilter(function(data) {
-        const t = (data.Ticker || "").toLowerCase();
-        const c = (data.Company || "").toLowerCase();
-        return t.includes(q) || c.includes(q);
-      });
+      activeFilters.search = (this.value || "").trim() || null;
+      applyFilters();
     });
 
     // Apply filter from URL param
@@ -475,7 +490,8 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
     const sectorParam = urlParams.get("sector");
     if (sectorParam) {
       document.getElementById("filter-sector").value = sectorParam;
-      table.setFilter("Sector", "=", sectorParam);
+      activeFilters.sector = sectorParam;
+      applyFilters();
     }
   </script>
 </body>
