@@ -1,58 +1,58 @@
 {
-  "updated": "2026-02-04T08:55:33.549573-05:00",
-  "total_picks": 450,
-  "active_picks": 76,
-  "dropped_picks": 374,
-  "winners": 60,
-  "losers": 63,
-  "win_rate": 13.33,
-  "avg_return": 0.53,
-  "active_avg_return": -1.07,
-  "dropped_avg_return": 0.86,
+  "updated": "2026-02-04T19:18:19.228115-05:00",
+  "total_picks": 452,
+  "active_picks": 69,
+  "dropped_picks": 383,
+  "winners": 64,
+  "losers": 66,
+  "win_rate": 14.16,
+  "avg_return": 0.58,
+  "active_avg_return": -1.2,
+  "dropped_avg_return": 0.9,
   "by_sector": {
-    "Consumer Defensive": {
-      "count": 29,
-      "avg_return": 0.71
-    },
-    "Financial Services": {
-      "count": 183,
-      "avg_return": 0.09
-    },
-    "Communication Services": {
-      "count": 25,
-      "avg_return": -0.87
-    },
-    "Industrials": {
-      "count": 37,
-      "avg_return": 0.44
-    },
-    "Consumer Cyclical": {
-      "count": 53,
-      "avg_return": 0.53
-    },
-    "Healthcare": {
-      "count": 18,
-      "avg_return": 1.87
-    },
-    "Technology": {
-      "count": 36,
-      "avg_return": -0.87
-    },
-    "Real Estate": {
-      "count": 10,
-      "avg_return": -0.45
-    },
     "Energy": {
       "count": 36,
       "avg_return": 4.55
     },
+    "Financial Services": {
+      "count": 183,
+      "avg_return": 0.03
+    },
+    "Healthcare": {
+      "count": 18,
+      "avg_return": 1.25
+    },
+    "Consumer Defensive": {
+      "count": 30,
+      "avg_return": 0.98
+    },
+    "Consumer Cyclical": {
+      "count": 54,
+      "avg_return": 0.91
+    },
     "Basic Materials": {
       "count": 19,
-      "avg_return": 0.99
+      "avg_return": 0.87
+    },
+    "Communication Services": {
+      "count": 25,
+      "avg_return": -0.92
+    },
+    "Industrials": {
+      "count": 37,
+      "avg_return": 0.28
+    },
+    "Technology": {
+      "count": 36,
+      "avg_return": -0.3
+    },
+    "Real Estate": {
+      "count": 10,
+      "avg_return": -0.27
     },
     "Utilities": {
       "count": 4,
-      "avg_return": 0.0
+      "avg_return": 0.12
     }
   },
   "top_performers": [
@@ -84,7 +84,7 @@
       "ticker": "MOH",
       "company": "Molina Healthcare, Inc.",
       "sector": "Healthcare",
-      "return_pct": 23.59,
+      "return_pct": 21.31,
       "entry_score": 7.68,
       "status": "ACTIVE"
     },
