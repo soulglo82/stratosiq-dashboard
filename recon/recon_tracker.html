@@ -14,14 +14,14 @@
   --surface: #0f1730;
   --surface-2:#121d3a;
   --border: rgba(255,255,255,0.08);
-  --text: rgba(255,255,255,0.92);
-  --muted: rgba(255,255,255,0.62);
-  --muted2: rgba(255,255,255,0.45);
+  --text: rgba(255,255,255,0.94);
+  --muted: rgba(255,255,255,0.78);
+  --muted2: rgba(255,255,255,0.58);
   --accent: #7aa2ff;
   --good: #33d49d;
   --bad: #ff5c7c;
   --warn: #ffcc66;
-  --chip: rgba(255,255,255,0.08);
+  --chip: rgba(255,255,255,0.10);
   --shadow: 0 8px 28px rgba(0,0,0,0.35);
   --radius: 14px;
 }
@@ -99,9 +99,9 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
   display:inline-flex;
   padding: 2px 8px;
   border-radius: 999px;
-  background: var(--chip);
-  border: 1px solid var(--border);
-  color: var(--muted);
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.85);
   font-size: 12px;
 }
 
@@ -125,7 +125,8 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
 .tabulator .tabulator-row{
   background: transparent !important;
   border-bottom: 1px solid rgba(255,255,255,0.06) !important;
-  min-height: 46px;
+  min-height: 48px;
+  color: rgba(255,255,255,0.88) !important;
 }
 .tabulator .tabulator-row:hover{
   background: rgba(122,162,255,0.06) !important;
@@ -148,15 +149,32 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
   background: transparent !important;
 }
 
+/* Column-specific contrast hierarchy */
+.tabulator .tabulator-cell[tabulator-field="Ticker"],
+.tabulator .tabulator-cell[tabulator-field="Company"] {
+  color: var(--text) !important;
+  font-weight: 500;
+}
+.tabulator .tabulator-cell[tabulator-field="Sector"],
+.tabulator .tabulator-cell[tabulator-field="Added_Date"] {
+  color: var(--muted) !important;
+}
+.tabulator .tabulator-cell[tabulator-field="Dropped_Date"] {
+  color: var(--muted2) !important;
+}
+
 /* Header filter styling */
 .tabulator .tabulator-header-filter input,
 .tabulator .tabulator-header-filter select {
-  background: rgba(0,0,0,0.18) !important;
-  color: rgba(255,255,255,0.85) !important;
+  background: rgba(0,0,0,0.25) !important;
+  color: rgba(255,255,255,0.88) !important;
   border: 1px solid var(--border) !important;
   border-radius: 6px !important;
   padding: 4px 8px !important;
   font-size: 12px !important;
+}
+.tabulator .tabulator-header-filter input::placeholder {
+  color: rgba(255,255,255,0.50) !important;
 }
     </style>
 </head>
@@ -172,7 +190,7 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
       <div>
         <h1>Recon Performance Tracker</h1>
         <div class="subtitle">Historical stock picks and performance metrics</div>
-        <div class="updated">Updated: 2026-02-05 10:46 ET</div>
+        <div class="updated">Updated: 2026-02-05 10:58 ET</div>
       </div>
     </div>
 
@@ -394,6 +412,14 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
         <div style="margin-top:14px;">
           <div class="muted" style="font-size:12px;">Entry summary</div>
           <div style="margin-top:6px; color: var(--text);">${summary || "—"}</div>
+        </div>
+
+        <div style="margin-top:14px; padding-top:14px; border-top: 1px solid var(--border);">
+          <div class="muted" style="font-size:12px;">Valuation Target</div>
+          <div style="margin-top:6px; color: var(--muted);">Target not shown</div>
+          <div style="margin-top:4px; font-size:12px; color: var(--muted2);">
+            Valuation targets are only displayed when underlying data quality is sufficient.
+          </div>
         </div>
       `;
 
