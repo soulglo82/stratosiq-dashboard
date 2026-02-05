@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-04T19:18:19.228115-05:00",
+  "updated": "2026-02-05T10:35:20.636691-05:00",
   "total_picks": 452,
   "active_picks": 69,
   "dropped_picks": 383,
@@ -10,45 +10,45 @@
   "active_avg_return": -1.2,
   "dropped_avg_return": 0.9,
   "by_sector": {
-    "Energy": {
-      "count": 36,
-      "avg_return": 4.55
-    },
-    "Financial Services": {
-      "count": 183,
-      "avg_return": 0.03
-    },
-    "Healthcare": {
-      "count": 18,
-      "avg_return": 1.25
-    },
-    "Consumer Defensive": {
-      "count": 30,
-      "avg_return": 0.98
-    },
     "Consumer Cyclical": {
       "count": 54,
       "avg_return": 0.91
-    },
-    "Basic Materials": {
-      "count": 19,
-      "avg_return": 0.87
-    },
-    "Communication Services": {
-      "count": 25,
-      "avg_return": -0.92
-    },
-    "Industrials": {
-      "count": 37,
-      "avg_return": 0.28
     },
     "Technology": {
       "count": 36,
       "avg_return": -0.3
     },
+    "Financial Services": {
+      "count": 183,
+      "avg_return": 0.03
+    },
+    "Industrials": {
+      "count": 37,
+      "avg_return": 0.28
+    },
+    "Communication Services": {
+      "count": 25,
+      "avg_return": -0.92
+    },
+    "Healthcare": {
+      "count": 18,
+      "avg_return": 1.25
+    },
     "Real Estate": {
       "count": 10,
       "avg_return": -0.27
+    },
+    "Consumer Defensive": {
+      "count": 30,
+      "avg_return": 0.98
+    },
+    "Basic Materials": {
+      "count": 19,
+      "avg_return": 0.87
+    },
+    "Energy": {
+      "count": 36,
+      "avg_return": 4.55
     },
     "Utilities": {
       "count": 4,
