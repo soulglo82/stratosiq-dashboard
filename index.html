@@ -4,56 +4,163 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StratosIQ Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #0b1020;
+      --surface: #0f1730;
+      --border: rgba(255,255,255,0.08);
+      --text: rgba(255,255,255,0.94);
+      --muted: rgba(255,255,255,0.65);
+      --accent: #7aa2ff;
+      --accent-glow: rgba(122,162,255,0.15);
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #1a1a2e; color: #eee; min-height: 100vh; }
-    .header { text-align: center; padding: 40px 20px 30px; }
-    .header .brand { font-size: 14px; letter-spacing: 3px; color: #6c8dfa; margin-bottom: 10px; }
-    .header h1 { font-size: 32px; font-weight: 600; }
-    .divider { height: 1px; background: linear-gradient(90deg, transparent, #0f3460, transparent); margin: 0 auto; max-width: 800px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: 40px auto; padding: 0 20px; }
-    .card { background: #16213e; border-radius: 12px; padding: 30px; text-align: center; border: 1px dashed #0f3460; transition: transform 0.2s, border-color 0.2s; }
-    .card:hover { transform: translateY(-4px); border-color: #6c8dfa; }
-    .card .icon { font-size: 32px; margin-bottom: 15px; }
-    .card h2 { font-size: 22px; margin-bottom: 10px; }
-    .card p { color: #888; font-size: 14px; margin-bottom: 20px; line-height: 1.5; }
-    .card .btn { display: inline-block; background: #6c8dfa; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: 500; transition: background 0.2s; }
-    .card .btn:hover { background: #5a7de8; }
-    .footer { text-align: center; padding: 40px 20px; color: #666; font-size: 14px; }
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(122,162,255,0.15), transparent),
+                  var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 60px 24px;
+    }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .header { text-align: center; margin-bottom: 50px; }
+    .header .brand {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .header h1 {
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .header .subtitle {
+      color: var(--muted);
+      font-size: 15px;
+      margin-top: 12px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      text-align: center;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(122,162,255,0.3), transparent);
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(122,162,255,0.25);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 60px var(--accent-glow);
+    }
+    .card:hover::before { opacity: 1; }
+    .card .icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      background: rgba(122,162,255,0.1);
+      border-radius: 14px;
+      border: 1px solid rgba(122,162,255,0.15);
+    }
+    .card h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      letter-spacing: -0.2px;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .card .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--accent) 0%, #5a8aff 100%);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(122,162,255,0.25);
+    }
+    .card .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(122,162,255,0.35);
+    }
+    .footer {
+      text-align: center;
+      padding: 50px 20px 20px;
+      color: rgba(255,255,255,0.35);
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
-  <div class="header">
-    <div class="brand">STRATOSIQ</div>
-    <h1>Dashboard</h1>
+  <div class="container">
+    <div class="header">
+      <div class="brand">STRATOSIQ</div>
+      <h1>Dashboard</h1>
+      <p class="subtitle">Systematic options intelligence</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">📋</div>
+        <h2>Patrol</h2>
+        <p>Cash-secured put opportunities ranked by risk profile</p>
+        <a href="patrol/index.html" class="btn">View Digest →</a>
+      </div>
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h2>Strike</h2>
+        <p>Earnings-driven put opportunities by tier</p>
+        <a href="strike/index.html" class="btn">View Digest →</a>
+      </div>
+      <div class="card">
+        <div class="icon">📊</div>
+        <h2>Performance</h2>
+        <p>Historical trade results for Patrol & Strike</p>
+        <a href="performance/summary.html" class="btn">View Results →</a>
+      </div>
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h2>Recon</h2>
+        <p>Value stock picks and performance tracking</p>
+        <a href="recon/recon_summary.html" class="btn">View Tracker →</a>
+      </div>
+    </div>
+    <div class="footer">© 2026 StratosIQ</div>
   </div>
-  <div class="divider"></div>
-  <div class="grid">
-    <div class="card">
-      <div class="icon">📋</div>
-      <h2>Patrol</h2>
-      <p>Cash-secured put opportunities ranked by engine</p>
-      <a href="patrol/index.html" class="btn">View Patrol Digest →</a>
-    </div>
-    <div class="card">
-      <div class="icon">⚡</div>
-      <h2>Strike</h2>
-      <p>Earnings-driven put opportunities by tier</p>
-      <a href="strike/index.html" class="btn">View Strike Digest →</a>
-    </div>
-    <div class="card">
-      <div class="icon">📊</div>
-      <h2>Performance</h2>
-      <p>Historical trade results for Patrol & Strike</p>
-      <a href="performance/summary.html" class="btn">View Performance →</a>
-    </div>
-    <div class="card">
-      <div class="icon">🔍</div>
-      <h2>Recon</h2>
-      <p>Value stock picks and performance tracking</p>
-      <a href="recon/recon_summary.html" class="btn">View Recon →</a>
-    </div>
-  </div>
-  <div class="footer">© 2026 StratosIQ</div>
 </body>
 </html>
