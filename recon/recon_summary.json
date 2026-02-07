@@ -1,58 +1,58 @@
 {
-  "updated": "2026-02-06T04:35:49.465152-05:00",
+  "updated": "2026-02-07T05:42:17.928866-05:00",
   "total_picks": 452,
-  "active_picks": 69,
-  "dropped_picks": 383,
-  "winners": 64,
-  "losers": 66,
-  "win_rate": 14.16,
-  "avg_return": 0.58,
-  "active_avg_return": -1.2,
-  "dropped_avg_return": 0.9,
+  "active_picks": 66,
+  "dropped_picks": 386,
+  "winners": 74,
+  "losers": 58,
+  "win_rate": 16.37,
+  "avg_return": 0.72,
+  "active_avg_return": -0.62,
+  "dropped_avg_return": 0.95,
   "by_sector": {
-    "Consumer Cyclical": {
-      "count": 54,
-      "avg_return": 0.91
-    },
-    "Technology": {
+    "Energy": {
       "count": 36,
-      "avg_return": -0.3
+      "avg_return": 4.55
     },
     "Financial Services": {
       "count": 183,
-      "avg_return": 0.03
+      "avg_return": 0.24
+    },
+    "Healthcare": {
+      "count": 18,
+      "avg_return": 1.38
+    },
+    "Consumer Defensive": {
+      "count": 30,
+      "avg_return": 0.31
+    },
+    "Consumer Cyclical": {
+      "count": 54,
+      "avg_return": 1.2
+    },
+    "Basic Materials": {
+      "count": 19,
+      "avg_return": 1.05
+    },
+    "Communication Services": {
+      "count": 25,
+      "avg_return": -0.59
+    },
+    "Technology": {
+      "count": 36,
+      "avg_return": 0.16
     },
     "Industrials": {
       "count": 37,
       "avg_return": 0.28
     },
-    "Communication Services": {
-      "count": 25,
-      "avg_return": -0.92
-    },
-    "Healthcare": {
-      "count": 18,
-      "avg_return": 1.25
-    },
     "Real Estate": {
       "count": 10,
-      "avg_return": -0.27
-    },
-    "Consumer Defensive": {
-      "count": 30,
-      "avg_return": 0.98
-    },
-    "Basic Materials": {
-      "count": 19,
-      "avg_return": 0.87
-    },
-    "Energy": {
-      "count": 36,
-      "avg_return": 4.55
+      "avg_return": -0.03
     },
     "Utilities": {
       "count": 4,
-      "avg_return": 0.12
+      "avg_return": -0.12
     }
   },
   "top_performers": [
@@ -86,7 +86,7 @@
       "sector": "Healthcare",
       "return_pct": 21.31,
       "entry_score": 7.68,
-      "status": "ACTIVE"
+      "status": "DROPPED"
     },
     {
       "ticker": "COP",
