@@ -1,20 +1,20 @@
 {
-  "updated": "2026-02-19T16:57:52.670912-05:00",
-  "total_trades": 414,
-  "wins": 356,
-  "losses": 58,
-  "win_rate": 85.99,
-  "total_pnl": -31158.0,
+  "updated": "2026-02-20T16:51:13.065411-05:00",
+  "total_trades": 505,
+  "wins": 394,
+  "losses": 111,
+  "win_rate": 78.02,
+  "total_pnl": -132193.0,
   "by_product": {
     "STRIKE": {
-      "trades": 383,
-      "win_rate": 87.73,
-      "pnl": -29451.5
+      "trades": 390,
+      "win_rate": 87.18,
+      "pnl": -44163.5
     },
     "PATROL": {
-      "trades": 31,
-      "win_rate": 64.52,
-      "pnl": -1706.5
+      "trades": 115,
+      "win_rate": 46.96,
+      "pnl": -88029.5
     }
   },
   "by_engine": {
@@ -34,9 +34,9 @@
       "pnl": 0
     },
     "AGEMA": {
-      "trades": 0,
-      "win_rate": 0,
-      "pnl": 0
+      "trades": 84,
+      "win_rate": 40.48,
+      "pnl": -86323.0
     },
     "ALPHA": {
       "trades": 0,
@@ -54,6 +54,6 @@
     "breach_rate": 0.0,
     "breach_depth": 0,
     "recovery_rate": 0,
-    "total_with_shield": 348
+    "total_with_shield": 425
   }
 }
