@@ -1,58 +1,58 @@
 {
-  "updated": "2026-02-14T05:27:50.481300-05:00",
-  "total_picks": 464,
-  "active_picks": 84,
-  "dropped_picks": 380,
-  "winners": 75,
-  "losers": 68,
-  "win_rate": 16.16,
-  "avg_return": 0.51,
-  "active_avg_return": -1.7,
-  "dropped_avg_return": 1.0,
+  "updated": "2026-02-21T05:41:06.607473-05:00",
+  "total_picks": 471,
+  "active_picks": 76,
+  "dropped_picks": 395,
+  "winners": 83,
+  "losers": 79,
+  "win_rate": 17.62,
+  "avg_return": 0.59,
+  "active_avg_return": -1.5,
+  "dropped_avg_return": 0.99,
   "by_sector": {
     "Energy": {
       "count": 36,
       "avg_return": 4.55
     },
     "Financial Services": {
-      "count": 188,
-      "avg_return": 0.05
+      "count": 189,
+      "avg_return": 0.01
     },
     "Healthcare": {
-      "count": 20,
-      "avg_return": 0.73
+      "count": 21,
+      "avg_return": 1.04
     },
     "Consumer Defensive": {
       "count": 31,
-      "avg_return": -0.27
+      "avg_return": 0.19
     },
     "Consumer Cyclical": {
       "count": 56,
-      "avg_return": 1.27
+      "avg_return": 1.85
     },
     "Industrials": {
       "count": 38,
-      "avg_return": 0.31
+      "avg_return": 0.21
     },
     "Basic Materials": {
       "count": 19,
-      "avg_return": 0.95
+      "avg_return": 0.92
     },
     "Communication Services": {
-      "count": 25,
-      "avg_return": -1.54
+      "count": 27,
+      "avg_return": -1.28
     },
     "Technology": {
-      "count": 37,
-      "avg_return": -0.18
+      "count": 39,
+      "avg_return": -0.31
     },
     "Utilities": {
       "count": 4,
       "avg_return": 1.48
     },
     "Real Estate": {
-      "count": 10,
-      "avg_return": -0.33
+      "count": 11,
+      "avg_return": -0.34
     }
   },
   "top_performers": [
@@ -118,7 +118,7 @@
       "sector": "Consumer Cyclical",
       "return_pct": 18.83,
       "entry_score": 7.5,
-      "status": "ACTIVE"
+      "status": "DROPPED"
     },
     {
       "ticker": "CYD",
@@ -126,7 +126,7 @@
       "sector": "Industrials",
       "return_pct": 18.14,
       "entry_score": 8.03,
-      "status": "ACTIVE"
+      "status": "DROPPED"
     },
     {
       "ticker": "XOM",
