@@ -195,7 +195,7 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
       <div>
         <h1>Recon Performance Tracker</h1>
         <div class="subtitle">Historical stock picks and performance metrics</div>
-        <div class="updated">Updated: 2026-02-21 05:41 ET</div>
+        <div class="updated">Updated: 2026-02-22 06:28 ET</div>
       </div>
     </div>
 
@@ -441,7 +441,7 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
         { title: "Ticker", field: "Ticker", width: 90, headerFilter: "input", frozen: true },
         { title: "Company", field: "Company", width: 200, headerFilter: "input" },
         { title: "Sector", field: "Sector", width: 150, headerFilter: "list", headerFilterParams: {valuesLookup: true}, formatter: fmtSector },
-        { title: "Added", field: "Added_Date", width: 110, headerFilter: "input" },
+        { title: "Added", field: "Added_Date", width: 110, headerFilter: "input", sorter: "date", sorterParams: { format: "yyyy-MM-dd" } },
         { title: "Status", field: "Status", width: 140, headerFilter: "list", headerFilterParams: {valuesLookup: true}, formatter: fmtStatus },
         { title: "Score", field: "Last_ValueScore", width: 130, hozAlign: "right", headerFilter: "input", formatter: fmtScore },
         { title: "Trend", field: "Last_MomAction", width: 120, headerFilter: "list", headerFilterParams: {valuesLookup: true}, formatter: fmtTrend },
@@ -449,7 +449,7 @@ h1{ font-size: 22px; margin: 0; letter-spacing: -0.2px; }
         { title: "Current $", field: "Current_Price", width: 100, hozAlign: "right", headerFilter: "input", formatter: fmtMoney },
         { title: "Return %", field: "Return_Pct", width: 100, hozAlign: "right", headerFilter: "input", formatter: fmtReturn },
         { title: "Days", field: "Days_Held", width: 80, hozAlign: "right", headerFilter: "input" },
-        { title: "Dropped", field: "Dropped_Date", width: 110, headerFilter: "input" },
+        { title: "Dropped", field: "Dropped_Date", width: 110, headerFilter: "input", sorter: "date", sorterParams: { format: "yyyy-MM-dd" } },
       ],
       initialSort: [{ column: "Added_Date", dir: "desc" }],
     });
