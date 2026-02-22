@@ -1,0 +1,41 @@
+{
+  "updated": "2026-02-22T06:28:46.579201-05:00",
+  "product": "STRIKE",
+  "total_trades": 390,
+  "wins": 340,
+  "losses": 50,
+  "win_rate": 87.18,
+  "total_pnl": -44163.5,
+  "avg_win": 223.34,
+  "avg_loss": -2401.98,
+  "loss_to_win_ratio": 10.8,
+  "top_loss_tickers": [
+    {
+      "ticker": "APP",
+      "pnl": -37330.0
+    },
+    {
+      "ticker": "MSFT",
+      "pnl": -29951.0
+    },
+    {
+      "ticker": "UNH",
+      "pnl": -16998.0
+    },
+    {
+      "ticker": "CVNA",
+      "pnl": -8756.0
+    },
+    {
+      "ticker": "VEEV",
+      "pnl": -4277.5
+    }
+  ],
+  "shield": {
+    "accuracy": 0.0,
+    "breach_rate": 0.0,
+    "breach_depth": 0,
+    "recovery_rate": 0,
+    "total_with_shield": 322
+  }
+}
