@@ -1,5 +1,5 @@
 {
-  "updated": "February 22, 2026 at 09:08 AM ET",
+  "updated": "February 22, 2026 at 09:59 AM ET",
   "product": "PATROL",
   "total_trades": 115,
   "wins": 54,
@@ -32,27 +32,30 @@
     }
   ],
   "shield": {
-    "accuracy": 0.0,
-    "breach_rate": 0.0,
-    "breach_depth": 0,
-    "recovery_rate": 0,
+    "accuracy": 8.7,
+    "breach_rate": 28.7,
+    "breach_depth": 14.7,
+    "recovery_rate": 33.3,
     "total_with_shield": 103
   },
   "by_profile": {
     "CORE": {
       "trades": 0,
       "win_rate": 0,
-      "pnl": 0
+      "pnl": 0,
+      "open": 40
     },
     "ALPHA": {
       "trades": 84,
       "win_rate": 40.48,
-      "pnl": -86323.0
+      "pnl": -86323.0,
+      "open": 26
     },
     "SPRINT": {
       "trades": 31,
       "win_rate": 64.52,
-      "pnl": -1706.5
+      "pnl": -1706.5,
+      "open": 2
     }
   }
 }
