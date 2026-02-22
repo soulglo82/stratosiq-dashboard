@@ -1,5 +1,5 @@
 {
-  "updated": "February 22, 2026 at 09:08 AM ET",
+  "updated": "February 22, 2026 at 09:59 AM ET",
   "product": "STRIKE",
   "total_trades": 390,
   "wins": 340,
@@ -32,10 +32,24 @@
     }
   ],
   "shield": {
-    "accuracy": 0.0,
-    "breach_rate": 0.0,
-    "breach_depth": 0,
-    "recovery_rate": 0,
+    "accuracy": 82.6,
+    "breach_rate": 12.1,
+    "breach_depth": 5.11,
+    "recovery_rate": 0.0,
     "total_with_shield": 322
+  },
+  "by_profile": {
+    "CORE": {
+      "trades": 0,
+      "win_rate": 0,
+      "pnl": 0,
+      "open": 0
+    },
+    "ALPHA": {
+      "trades": 0,
+      "win_rate": 0,
+      "pnl": 0,
+      "open": 0
+    }
   }
 }
