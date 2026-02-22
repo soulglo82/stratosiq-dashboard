@@ -1,5 +1,5 @@
 {
-  "updated": "February 22, 2026 at 09:59 AM ET",
+  "updated": "February 22, 2026 at 10:48 AM ET",
   "product": "STRIKE",
   "total_trades": 390,
   "wins": 340,
@@ -40,9 +40,9 @@
   },
   "by_profile": {
     "CORE": {
-      "trades": 0,
-      "win_rate": 0,
-      "pnl": 0,
+      "trades": 168,
+      "win_rate": 80.95,
+      "pnl": -48912.5,
       "open": 0
     },
     "ALPHA": {
