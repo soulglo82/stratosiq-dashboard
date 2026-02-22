@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T06:44:59.411359-05:00",
+  "updated": "February 22, 2026 at 09:08 AM ET",
   "product": "STRIKE",
   "total_trades": 390,
   "wins": 340,
@@ -9,26 +9,26 @@
   "avg_win": 223.34,
   "avg_loss": -2401.98,
   "loss_to_win_ratio": 10.8,
-  "top_loss_tickers": [
+  "top_win_tickers": [
     {
-      "ticker": "APP",
-      "pnl": -37330.0
+      "ticker": "CRWD",
+      "pnl": 8757.0
     },
     {
-      "ticker": "MSFT",
-      "pnl": -29951.0
+      "ticker": "NVDA",
+      "pnl": 7058.0
     },
     {
-      "ticker": "UNH",
-      "pnl": -16998.0
+      "ticker": "AMD",
+      "pnl": 6902.0
     },
     {
-      "ticker": "CVNA",
-      "pnl": -8756.0
+      "ticker": "GOOGL",
+      "pnl": 5378.0
     },
     {
-      "ticker": "VEEV",
-      "pnl": -4277.5
+      "ticker": "TSM",
+      "pnl": 5201.5
     }
   ],
   "shield": {
