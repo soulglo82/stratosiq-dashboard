@@ -303,7 +303,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -456,7 +456,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -813,7 +813,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1119,7 +1119,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1221,7 +1221,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1272,7 +1272,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1323,7 +1323,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1425,7 +1425,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 2.887059939,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1476,7 +1476,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1527,7 +1527,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1578,7 +1578,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1680,7 +1680,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1782,7 +1782,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1833,7 +1833,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1935,7 +1935,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -1986,7 +1986,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2037,7 +2037,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2139,7 +2139,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2190,7 +2190,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2343,7 +2343,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2445,7 +2445,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2496,7 +2496,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2547,7 +2547,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2598,7 +2598,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2649,7 +2649,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2751,7 +2751,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2802,7 +2802,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2853,7 +2853,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 1.488833747,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2904,7 +2904,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -2955,7 +2955,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3006,7 +3006,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3057,7 +3057,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3159,7 +3159,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3210,7 +3210,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3312,7 +3312,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3363,7 +3363,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3414,7 +3414,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3516,7 +3516,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3567,7 +3567,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3618,7 +3618,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3669,7 +3669,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3873,7 +3873,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3924,7 +3924,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -3975,7 +3975,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -4077,7 +4077,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -4383,7 +4383,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -4587,7 +4587,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -4638,7 +4638,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -4740,7 +4740,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -4893,7 +4893,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -5607,7 +5607,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -5709,7 +5709,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -5760,7 +5760,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -5811,7 +5811,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -5964,7 +5964,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -6066,7 +6066,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -6168,7 +6168,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -6219,7 +6219,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -6474,7 +6474,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -6627,7 +6627,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -6933,7 +6933,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 2.249440584,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -7086,7 +7086,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -7137,7 +7137,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -7188,7 +7188,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -7239,7 +7239,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -7545,7 +7545,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -7749,7 +7749,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -7800,7 +7800,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -7851,7 +7851,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -7953,7 +7953,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -8106,7 +8106,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -8208,7 +8208,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -8361,7 +8361,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -8412,7 +8412,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -8973,7 +8973,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -9024,7 +9024,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -9126,7 +9126,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -9381,7 +9381,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -9432,7 +9432,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -9534,7 +9534,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -9585,7 +9585,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -9636,7 +9636,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -9687,7 +9687,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -9789,7 +9789,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -9891,7 +9891,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10095,7 +10095,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10146,7 +10146,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10248,7 +10248,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10299,7 +10299,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10350,7 +10350,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10452,7 +10452,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10503,7 +10503,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10656,7 +10656,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 1.230120376,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10707,7 +10707,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10911,7 +10911,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -10962,7 +10962,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11013,7 +11013,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11115,7 +11115,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 1.528080968,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11166,7 +11166,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11217,7 +11217,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11268,7 +11268,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 1.681034483,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11319,7 +11319,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 1.325491573,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11370,7 +11370,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11523,7 +11523,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 2.235171334,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11625,7 +11625,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11727,7 +11727,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -11931,7 +11931,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12033,7 +12033,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12237,7 +12237,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 0.5384615385,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12288,7 +12288,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12441,7 +12441,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12492,7 +12492,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12543,7 +12543,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 0.03865481252,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12594,7 +12594,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12645,7 +12645,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 0.01905124786,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12747,7 +12747,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12849,7 +12849,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12900,7 +12900,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -12951,7 +12951,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 0.2507232401,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -13053,7 +13053,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 1.908494233,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -13155,7 +13155,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -13614,7 +13614,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 3.134441088,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -13665,7 +13665,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 2.217328964,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -14022,7 +14022,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -14175,7 +14175,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -14532,7 +14532,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -14736,7 +14736,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -14889,7 +14889,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -14940,7 +14940,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -15246,7 +15246,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -15348,7 +15348,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -15399,7 +15399,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -15450,7 +15450,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -15501,7 +15501,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -15552,7 +15552,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 0.6087326276,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -15705,7 +15705,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -15807,7 +15807,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -15858,7 +15858,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -15909,7 +15909,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -16062,7 +16062,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -16113,7 +16113,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 5.446385434,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -16215,7 +16215,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 5.819913809,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -16521,7 +16521,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -16623,7 +16623,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -16776,7 +16776,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -16827,7 +16827,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -16878,7 +16878,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -16929,7 +16929,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 3.387085892,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -17031,7 +17031,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -17133,7 +17133,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -17286,7 +17286,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -17388,7 +17388,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 0.9213990222,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -17439,7 +17439,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -17796,7 +17796,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 1.20790141,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -17898,7 +17898,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -18000,7 +18000,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -18102,7 +18102,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 1.944805862,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -18153,7 +18153,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -18357,7 +18357,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -18612,7 +18612,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 10.58324899,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -18714,7 +18714,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -18918,7 +18918,7 @@
     "Shield_Accuracy": "YES",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -19122,7 +19122,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -19377,7 +19377,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -19632,7 +19632,7 @@
     "Shield_Accuracy": "NO",
     "Shield_Breached_During_Trade?": "YES",
     "Shield_Breach_Depth_%": 3.51583959,
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -19683,7 +19683,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -19836,7 +19836,7 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   },
   {
     "Product": "STRIKE",
@@ -19887,6 +19887,6 @@
     "Shield_Accuracy": "N/A",
     "Shield_Breached_During_Trade?": "NO",
     "Shield_Breach_Depth_%": "",
-    "Engine": ""
+    "Engine": "CORE"
   }
 ]
