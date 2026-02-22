@@ -80,7 +80,7 @@
             <span class="version">PATROL</span>
         </div>
         <div class="header-right">
-            <div class="date-info">Sunday, February 22, 2026 at 09:08 AM ET</div>
+            <div class="date-info">Sunday, February 22, 2026 at 09:59 AM ET</div>
             <div class="trade-count">183 trades tracked</div>
         </div>
     </header>
@@ -93,9 +93,23 @@
     </nav>
 
     <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All (183)</button>
-        <button class="filter-btn open" data-filter="OPEN">Open (66)</button>
-        <button class="filter-btn closed" data-filter="CLOSED">Closed (115)</button>
+        <span style="color:var(--text-muted);font-size:12px;align-self:center;">STATUS</span>
+        <button class="filter-btn active" data-group="status" data-filter="all">All (183)</button>
+        <button class="filter-btn open" data-group="status" data-filter="OPEN">Open (66)</button>
+        <button class="filter-btn closed" data-group="status" data-filter="CLOSED">Closed (115)</button>
+        <span style="border-left:1px solid var(--border);margin:0 4px;"></span>
+        <span style="color:var(--text-muted);font-size:12px;align-self:center;">PROFILE</span>
+        <button class="filter-btn" data-group="profile" data-filter="CORE">Core</button>
+        <button class="filter-btn" data-group="profile" data-filter="ALPHA">Alpha</button>
+        <button class="filter-btn" data-group="profile" data-filter="SPRINT">Sprint</button>
+        <span style="border-left:1px solid var(--border);margin:0 4px;"></span>
+        <span style="color:var(--text-muted);font-size:12px;align-self:center;">RESULT</span>
+        <button class="filter-btn" data-group="result" data-filter="WIN">Wins</button>
+        <button class="filter-btn" data-group="result" data-filter="LOSS">Losses</button>
+        <span style="border-left:1px solid var(--border);margin:0 4px;"></span>
+        <span style="color:var(--text-muted);font-size:12px;align-self:center;">SHIELD</span>
+        <button class="filter-btn" data-group="shield" data-filter="BREACH">Breached</button>
+        <button class="filter-btn" data-group="shield" data-filter="NO_BREACH">Not Breached</button>
     </div>
 
     <div id="tracker-table"></div>
@@ -233,39 +247,53 @@
             initialSort: [{ column: "Expiration", dir: "desc" }]
         });
 
-        // Status filter handlers
-        var currentStatusFilter = null;
+        // Multi-group filter system
+        var activeFilters = {};
+
+        function applyFilters() {
+            table.clearFilter();
+            var filters = [];
+            Object.keys(activeFilters).forEach(function(group) {
+                var val = activeFilters[group];
+                if (!val) return;
+                if (group === "status") {
+                    if (val === "OPEN") filters.push({ field: "Status", type: "in", value: ["OPEN", "MONITORING"] });
+                    else if (val === "CLOSED") filters.push({ field: "Status", type: "in", value: ["EXPIRED_OTM", "EXPIRED_ITM"] });
+                } else if (group === "profile") {
+                    filters.push({ field: "Engine", type: "=", value: val });
+                } else if (group === "result") {
+                    if (val === "WIN") filters.push({ field: "Win_Loss", type: "=", value: "WIN" });
+                    else if (val === "LOSS") filters.push({ field: "Win_Loss", type: "=", value: "LOSS" });
+                } else if (group === "shield") {
+                    if (val === "BREACH") filters.push({ field: "Shield_Breached_During_Trade?", type: "=", value: "YES" });
+                    else if (val === "NO_BREACH") filters.push({ field: "Shield_Breached_During_Trade?", type: "=", value: "NO" });
+                }
+            });
+            if (filters.length > 0) table.setFilter(filters);
+        }
 
         document.querySelectorAll(".filter-btn").forEach(function(btn) {
             btn.addEventListener("click", function() {
+                var group = this.dataset.group;
                 var filter = this.dataset.filter;
-
-                if (filter === "all") {
-                    document.querySelectorAll(".filter-btn").forEach(function(b) { b.classList.remove("active"); });
-                    this.classList.add("active");
-                    currentStatusFilter = null;
-                    table.clearFilter();
-                    return;
-                }
-
                 var wasActive = this.classList.contains("active");
-                document.querySelectorAll(".filter-btn").forEach(function(b) { b.classList.remove("active"); });
 
-                if (!wasActive) {
+                // Clear active state within this group
+                document.querySelectorAll('[data-group="' + group + '"]').forEach(function(b) { b.classList.remove("active"); });
+
+                if (filter === "all" || filter === "ALL") {
+                    delete activeFilters[group];
                     this.classList.add("active");
-                    currentStatusFilter = filter;
-                    if (filter === "OPEN") {
-                        table.setFilter("Status", "=", "OPEN");
-                    } else {
-                        table.setFilter([
-                            { field: "Status", type: "in", value: ["EXPIRED_OTM", "EXPIRED_ITM"] }
-                        ]);
-                    }
+                } else if (wasActive) {
+                    // Toggle off — reset group to "all" if present
+                    delete activeFilters[group];
+                    var allBtn = document.querySelector('[data-group="' + group + '"][data-filter="all"], [data-group="' + group + '"][data-filter="ALL"]');
+                    if (allBtn) allBtn.classList.add("active");
                 } else {
-                    document.querySelector('[data-filter="all"]').classList.add("active");
-                    currentStatusFilter = null;
-                    table.clearFilter();
+                    activeFilters[group] = filter;
+                    this.classList.add("active");
                 }
+                applyFilters();
             });
         });
     </script>
