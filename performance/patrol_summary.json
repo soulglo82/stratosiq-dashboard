@@ -1,0 +1,58 @@
+{
+  "updated": "2026-02-22T06:28:46.601027-05:00",
+  "product": "PATROL",
+  "total_trades": 115,
+  "wins": 54,
+  "losses": 61,
+  "win_rate": 46.96,
+  "total_pnl": -88029.5,
+  "avg_win": 490.19,
+  "avg_loss": -1877.04,
+  "loss_to_win_ratio": 3.8,
+  "top_loss_tickers": [
+    {
+      "ticker": "APP",
+      "pnl": -38837.0
+    },
+    {
+      "ticker": "CVNA",
+      "pnl": -20835.0
+    },
+    {
+      "ticker": "COIN",
+      "pnl": -14710.0
+    },
+    {
+      "ticker": "TEAM",
+      "pnl": -7899.0
+    },
+    {
+      "ticker": "MSTR",
+      "pnl": -7159.0
+    }
+  ],
+  "shield": {
+    "accuracy": 0.0,
+    "breach_rate": 0.0,
+    "breach_depth": 0,
+    "recovery_rate": 0,
+    "total_with_shield": 103
+  },
+  "by_profile": {
+    "CORE": {
+      "trades": 0,
+      "win_rate": 0,
+      "pnl": 0
+    },
+    "ALPHA": {
+      "trades": 84,
+      "win_rate": 40.48,
+      "pnl": -86323.0
+    },
+    "SPRINT": {
+      "trades": 31,
+      "win_rate": 64.52,
+      "pnl": -1706.5
+    }
+  }
+}
