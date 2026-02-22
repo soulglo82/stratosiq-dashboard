@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T06:44:59.432689-05:00",
+  "updated": "February 22, 2026 at 09:08 AM ET",
   "product": "PATROL",
   "total_trades": 115,
   "wins": 54,
@@ -9,26 +9,26 @@
   "avg_win": 490.19,
   "avg_loss": -1877.04,
   "loss_to_win_ratio": 3.8,
-  "top_loss_tickers": [
+  "top_win_tickers": [
     {
-      "ticker": "APP",
-      "pnl": -38837.0
+      "ticker": "MU",
+      "pnl": 4290.0
     },
     {
-      "ticker": "CVNA",
-      "pnl": -20835.0
+      "ticker": "ASML",
+      "pnl": 3545.0
     },
     {
-      "ticker": "COIN",
-      "pnl": -14710.0
+      "ticker": "AVGO",
+      "pnl": 3317.0
     },
     {
-      "ticker": "TEAM",
-      "pnl": -7899.0
+      "ticker": "LRCX",
+      "pnl": 2257.0
     },
     {
-      "ticker": "MSTR",
-      "pnl": -7159.0
+      "ticker": "ANET",
+      "pnl": 2026.0
     }
   ],
   "shield": {
