@@ -197,6 +197,44 @@ header {
 .rating-constrained { color: var(--accent-yellow); font-weight: 600; }
 .rating-exposed { color: var(--accent-red); font-weight: 600; }
 
+.stale-banner {
+  background: linear-gradient(135deg, #2d1f00, #1a1200);
+  border: 1px solid var(--accent-yellow);
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stale-banner .stale-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.stale-banner .stale-text {
+  font-size: 13px;
+  color: var(--accent-yellow);
+  line-height: 1.5;
+}
+
+.stale-banner .stale-text strong {
+  color: #f0c040;
+}
+
+.empty-state {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 32px;
+  margin: 24px 0;
+  text-align: center;
+}
+.empty-state h2 { margin-bottom: 12px; font-size: 18px; }
+.empty-state p { color: var(--text-muted); font-size: 14px; margin: 8px 0; }
+.empty-state ul { color: var(--text-muted); font-size: 13px; list-style: disc; text-align: left; max-width: 500px; margin: 12px auto; padding-left: 20px; }
+
 .metrics-guide {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -244,6 +282,14 @@ footer {
       <div class="contract-count">19 earnings opportunities</div>
     </div>
   </header>
+  <div class="stale-banner">
+    <span class="stale-icon">&#9888;&#65039;</span>
+    <span class="stale-text">
+      <strong>No fresh data available for Wednesday, February 25, 2026.</strong>
+      Showing last available data from <strong>Monday, February 23, 2026</strong>.
+      This can happen on weekends, market holidays, or when the upstream scan has not yet run.
+    </span>
+  </div>
   <div class="risk-notice">
     <em>&#9889; Earnings-driven opportunities ordered by risk profile — Conservative, Aggressive — reflecting probability of profit.</em>
   </div>
