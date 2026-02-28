@@ -1,58 +1,58 @@
 {
-  "updated": "February 22, 2026 at 10:48 AM ET",
-  "total_picks": 471,
-  "active_picks": 76,
-  "dropped_picks": 395,
+  "updated": "February 28, 2026 at 05:31 AM ET",
+  "total_picks": 479,
+  "active_picks": 86,
+  "dropped_picks": 393,
   "winners": 83,
-  "losers": 79,
-  "win_rate": 17.62,
-  "avg_return": 0.59,
-  "active_avg_return": -1.5,
-  "dropped_avg_return": 0.99,
+  "losers": 89,
+  "win_rate": 17.33,
+  "avg_return": 0.33,
+  "active_avg_return": -2.2,
+  "dropped_avg_return": 0.88,
   "by_sector": {
     "Energy": {
-      "count": 36,
-      "avg_return": 4.55
+      "count": 37,
+      "avg_return": 4.23
     },
     "Financial Services": {
       "count": 189,
-      "avg_return": 0.01
+      "avg_return": -0.16
     },
     "Healthcare": {
-      "count": 21,
-      "avg_return": 1.04
+      "count": 22,
+      "avg_return": 0.51
     },
     "Consumer Defensive": {
       "count": 31,
-      "avg_return": 0.19
+      "avg_return": -0.35
     },
     "Consumer Cyclical": {
-      "count": 56,
-      "avg_return": 1.85
+      "count": 57,
+      "avg_return": 0.68
     },
     "Industrials": {
       "count": 38,
-      "avg_return": 0.21
+      "avg_return": 0.87
     },
     "Basic Materials": {
       "count": 19,
-      "avg_return": 0.92
+      "avg_return": 0.46
     },
     "Communication Services": {
-      "count": 27,
-      "avg_return": -1.28
+      "count": 29,
+      "avg_return": -1.27
     },
     "Technology": {
-      "count": 39,
-      "avg_return": -0.31
+      "count": 41,
+      "avg_return": -0.74
+    },
+    "Real Estate": {
+      "count": 12,
+      "avg_return": 0.92
     },
     "Utilities": {
       "count": 4,
       "avg_return": 1.48
-    },
-    "Real Estate": {
-      "count": 11,
-      "avg_return": -0.34
     }
   },
   "top_performers": [
@@ -113,14 +113,6 @@
       "status": "DROPPED"
     },
     {
-      "ticker": "CCS",
-      "company": "Century Communities, Inc.",
-      "sector": "Consumer Cyclical",
-      "return_pct": 18.83,
-      "entry_score": 7.5,
-      "status": "DROPPED"
-    },
-    {
       "ticker": "CYD",
       "company": "China Yuchai International Limited",
       "sector": "Industrials",
@@ -134,6 +126,14 @@
       "sector": "Energy",
       "return_pct": 18.11,
       "entry_score": 6.48,
+      "status": "DROPPED"
+    },
+    {
+      "ticker": "IVZ",
+      "company": "Invesco Ltd.",
+      "sector": "Financial Services",
+      "return_pct": 18.1,
+      "entry_score": 6.01,
       "status": "DROPPED"
     }
   ]
