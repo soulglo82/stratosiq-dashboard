@@ -1,14 +1,14 @@
 {
-  "updated": "February 25, 2026 at 04:58 PM ET",
+  "updated": "March 02, 2026 at 04:02 PM ET",
   "product": "PATROL",
-  "total_trades": 115,
-  "wins": 54,
-  "losses": 61,
-  "win_rate": 46.96,
-  "total_pnl": -88029.5,
-  "avg_win": 490.19,
-  "avg_loss": -1877.04,
-  "loss_to_win_ratio": 3.8,
+  "total_trades": 141,
+  "wins": 64,
+  "losses": 77,
+  "win_rate": 45.39,
+  "total_pnl": -95511.8,
+  "avg_win": 522.22,
+  "avg_loss": -1674.46,
+  "loss_to_win_ratio": 3.2,
   "top_win_tickers": [
     {
       "ticker": "MU",
@@ -23,20 +23,20 @@
       "pnl": 3317.0
     },
     {
-      "ticker": "LRCX",
-      "pnl": 2257.0
+      "ticker": "TSLA",
+      "pnl": 2967.0
     },
     {
-      "ticker": "ANET",
-      "pnl": 2026.0
+      "ticker": "META",
+      "pnl": 2440.0
     }
   ],
   "shield": {
-    "accuracy": 8.7,
-    "breach_rate": 28.7,
-    "breach_depth": 14.7,
-    "recovery_rate": 33.3,
-    "total_with_shield": 103
+    "accuracy": 12.3,
+    "breach_rate": 32.6,
+    "breach_depth": 13.38,
+    "recovery_rate": 30.4,
+    "total_with_shield": 122
   },
   "by_profile": {
     "CORE": {
@@ -46,10 +46,10 @@
       "open": 40
     },
     "ALPHA": {
-      "trades": 84,
-      "win_rate": 40.48,
-      "pnl": -86323.0,
-      "open": 26
+      "trades": 110,
+      "win_rate": 40.0,
+      "pnl": -93805.3,
+      "open": 0
     },
     "SPRINT": {
       "trades": 31,
