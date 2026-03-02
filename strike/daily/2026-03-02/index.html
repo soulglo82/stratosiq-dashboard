@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strike Dashboard | Monday, March 02, 2026</title>
+  <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator_midnight.min.css" rel="stylesheet">
+  <style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-dark: #0d1117;
+  --bg-card: #161b22;
+  --bg-input: #21262d;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --accent-green: #3fb950;
+  --accent-teal: #39d353;
+  --accent-yellow: #d29922;
+  --accent-orange: #db6d28;
+  --accent-red: #f85149;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text);
+  padding: 16px 24px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent-orange);
+  letter-spacing: 1px;
+}
+
+.version {
+  background: var(--accent-orange);
+  color: #000;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.date-info {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.contract-count {
+  font-size: 13px;
+  color: var(--accent-orange);
+  font-weight: 500;
+}
+
+.risk-notice {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 16px;
+  margin-bottom: 14px;
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 7px 14px;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filter-btn:hover { background: var(--border); }
+.filter-btn.active { background: var(--accent-orange); color: #000; font-weight: 600; }
+.filter-btn.core.active { background: #238636; }
+.filter-btn.alpha.active { background: #da3633; }
+
+.engine-section {
+  margin-bottom: 32px;
+}
+
+.engine-section h2 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.engine-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+/* Tabulator Customizations */
+.tabulator {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  width: auto !important;
+}
+
+.tabulator-header {
+  background: var(--bg-input) !important;
+  border-bottom: 2px solid var(--border) !important;
+}
+
+.tabulator-col {
+  background: transparent !important;
+  border-right: 1px solid var(--border) !important;
+}
+
+.tabulator-col-group .tabulator-col-group-cols {
+  border-right: 2px solid var(--border) !important;
+}
+
+.tabulator-col-title {
+  font-weight: 600 !important;
+  font-size: 11px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  color: var(--text-muted) !important;
+}
+
+.tabulator-col-group-cols .tabulator-col-title {
+  font-size: 10px !important;
+}
+
+.tabulator-header-filter input {
+  background: var(--bg-dark) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  color: var(--text) !important;
+  padding: 4px 6px !important;
+  font-size: 11px !important;
+}
+
+.tabulator-row {
+  background: transparent !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.tabulator-row:hover {
+  background: rgba(255,255,255,0.03) !important;
+}
+
+.tabulator-cell {
+  border-right: 1px solid rgba(48,54,61,0.5) !important;
+  padding: 8px 10px !important;
+}
+
+.cell-ticker { font-weight: 700; }
+.cell-muted { color: var(--text-muted); }
+.cell-green { color: var(--accent-green); font-weight: 600; }
+.cell-teal { color: var(--accent-teal); font-weight: 600; }
+.cell-yellow { color: var(--accent-yellow); }
+.cell-orange { color: var(--accent-orange); font-weight: 600; }
+.cell-red { color: var(--accent-red); }
+
+.rating-fortified { color: var(--accent-green); font-weight: 600; }
+.rating-constrained { color: var(--accent-yellow); font-weight: 600; }
+.rating-exposed { color: var(--accent-red); font-weight: 600; }
+
+.stale-banner {
+  background: linear-gradient(135deg, #2d1f00, #1a1200);
+  border: 1px solid var(--accent-yellow);
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stale-banner .stale-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.stale-banner .stale-text {
+  font-size: 13px;
+  color: var(--accent-yellow);
+  line-height: 1.5;
+}
+
+.stale-banner .stale-text strong {
+  color: #f0c040;
+}
+
+.empty-state {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 32px;
+  margin: 24px 0;
+  text-align: center;
+}
+.empty-state h2 { margin-bottom: 12px; font-size: 18px; }
+.empty-state p { color: var(--text-muted); font-size: 14px; margin: 8px 0; }
+.empty-state ul { color: var(--text-muted); font-size: 13px; list-style: disc; text-align: left; max-width: 500px; margin: 12px auto; padding-left: 20px; }
+
+.metrics-guide {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 24px;
+}
+
+.metrics-guide h3 {
+  color: var(--text);
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.metrics-guide p {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.metrics-guide strong {
+  color: var(--text);
+}
+
+footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 11px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  margin-top: 20px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <a href="https://stratosiq.trade/" class="logo" style="text-decoration:none;color:inherit;">STRATOSIQ</a>
+      <span class="version">STRIKE v4.0</span>
+      <a href="https://stratosiq.trade/" class="home-link" style="margin-left:20px;color:#6c8dfa;text-decoration:none;font-size:14px;">&#8592; Home</a>
+    </div>
+    <div class="header-right">
+      <div class="date-info">Monday, March 02, 2026</div>
+      <div class="contract-count">15 earnings opportunities</div>
+    </div>
+  </header>
+  <div class="risk-notice">
+    <em>&#9889; Earnings-driven opportunities ordered by risk profile — Conservative, Aggressive — reflecting probability of profit.</em>
+  </div>
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All (15)</button>
+    <button class="filter-btn core" data-filter="CORE">🟢 CORE (5)</button>
+    <button class="filter-btn alpha" data-filter="ALPHA">🔴 ALPHA (10)</button>
+  </div>
+  <main>
+    <section class="engine-section" data-engine="CORE">
+      <h2>🟢 CORE — CONSERVATIVE EARNINGS</h2>
+      <p class="engine-desc">Conservative delta targeting 81-90% probability of profit with strong structural protection.</p>
+      <div id="table-CORE"></div>
+    </section>
+    <section class="engine-section" data-engine="ALPHA">
+      <h2>🔴 ALPHA — AGGRESSIVE EARNINGS</h2>
+      <p class="engine-desc">Aggressive delta targeting 70-80% probability of profit with higher yield potential.</p>
+      <div id="table-ALPHA"></div>
+    </section>
+  </main>
+  <div class="metrics-guide">
+    <h3>📖 Understanding Your Metrics</h3>
+    <p><strong>Score (0–10):</strong> Quality score based on 6 factors (delta, IVP, liquidity, sigma distance, DTE, return on margin).</p>
+    <p><strong>Delta:</strong> Market-implied probability proxy. Example: –0.15 delta ≈ ~85% chance the option expires worthless.</p>
+    <p><strong>Days to Earnings:</strong> Number of days until the company's earnings announcement — the key catalyst for Strike strategies.</p>
+    <p><strong>IVP:</strong> IV Percentile — where current implied volatility ranks over the past year (35-80% is optimal for premium selling).</p>
+    <p><strong>Shield:</strong> Estimated danger-floor price based on volatility and time.<br>🟢 <strong>FORTIFIED</strong> (≥5% buffer) · 🟡 <strong>CONSTRAINED</strong> (2-5%) · 🔴 <strong>EXPOSED</strong> (&lt;2%)</p>
+    <p><strong>ARoC:</strong> Annualized Return on Capital at risk.</p>
+    <p><strong>Capital:</strong> Cash required to hold the position (cash-secured puts = strike × 100 shares).</p>
+  </div>
+  <footer>Generated by StratosIQ Strike · Earnings-driven options discovery</footer>
+  <script src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
+  <script>
+
+var engineData = {"CORE":[{"ticker":"MU","expiry":"2026-03-20","dte":22,"strike":340.0,"spot":412.41,"delta":-0.1564,"premium":7.62,"spreadPct":7.21,"score":7.4,"pop":84.4,"aroc":0.3587,"thetaEff":15.34,"capital":34000.0,"shieldPrice":364.53,"buffer":5.95,"daysToEarnings":16,"ivp":88.0},{"ticker":"ACN","expiry":"2026-03-20","dte":22,"strike":180.0,"spot":208.65,"delta":-0.1408,"premium":2.58,"spreadPct":13.59,"score":5.4,"pop":85.9,"aroc":0.2212,"thetaEff":11.02,"capital":18000.0,"shieldPrice":189.46,"buffer":4.53,"daysToEarnings":17,"ivp":99.0},{"ticker":"ORCL","expiry":"2026-03-13","dte":15,"strike":115.0,"spot":145.32,"delta":-0.1056,"premium":1.68,"spreadPct":11.34,"score":4.6,"pop":89.4,"aroc":0.3343,"thetaEff":17.17,"capital":11500.0,"shieldPrice":124.29,"buffer":6.39,"daysToEarnings":7,"ivp":98.0},{"ticker":"WSM","expiry":"2026-03-20","dte":22,"strike":180.0,"spot":205.74,"delta":-0.1717,"premium":3.2,"spreadPct":12.5,"score":4.5,"pop":82.8,"aroc":0.2765,"thetaEff":10.31,"capital":18000.0,"shieldPrice":180.87,"buffer":0.42,"daysToEarnings":16,"ivp":48.0},{"ticker":"MRVL","expiry":"2026-03-06","dte":8,"strike":69.0,"spot":81.67,"delta":-0.1027,"premium":0.52,"spreadPct":7.69,"score":2.7,"pop":89.7,"aroc":0.3306,"thetaEff":24.64,"capital":6900.0,"shieldPrice":70.39,"buffer":1.71,"daysToEarnings":3,"ivp":90.0}],"ALPHA":[{"ticker":"MU","expiry":"2026-03-20","dte":22,"strike":355.0,"spot":412.41,"delta":-0.2031,"premium":10.57,"spreadPct":8.98,"score":5.7,"pop":79.7,"aroc":0.472,"thetaEff":16.65,"capital":35500.0,"shieldPrice":364.53,"buffer":2.31,"daysToEarnings":16,"ivp":88.0},{"ticker":"HPE","expiry":"2026-03-13","dte":15,"strike":20.0,"spot":21.48,"delta":-0.2875,"premium":0.56,"spreadPct":7.14,"score":5.3,"pop":71.2,"aroc":0.657,"thetaEff":21.95,"capital":2000.0,"shieldPrice":19.41,"buffer":-2.74,"daysToEarnings":7,"ivp":86.0},{"ticker":"CCL","expiry":"2026-03-27","dte":29,"strike":29.0,"spot":31.56,"delta":-0.2679,"premium":0.86,"spreadPct":12.72,"score":5.0,"pop":73.2,"aroc":0.3515,"thetaEff":11.45,"capital":2900.0,"shieldPrice":29.18,"buffer":0.57,"daysToEarnings":18,"ivp":88.0},{"ticker":"WSM","expiry":"2026-03-20","dte":22,"strike":190.0,"spot":205.74,"delta":-0.2725,"premium":5.55,"spreadPct":12.61,"score":5.0,"pop":72.8,"aroc":0.4541,"thetaEff":12.6,"capital":19000.0,"shieldPrice":180.87,"buffer":-4.44,"daysToEarnings":16,"ivp":48.0},{"ticker":"ACN","expiry":"2026-03-20","dte":22,"strike":195.0,"spot":208.65,"delta":-0.2835,"premium":5.9,"spreadPct":6.78,"score":4.5,"pop":71.7,"aroc":0.485,"thetaEff":13.63,"capital":19500.0,"shieldPrice":189.46,"buffer":-2.66,"daysToEarnings":17,"ivp":99.0},{"ticker":"ADBE","expiry":"2026-03-13","dte":15,"strike":242.5,"spot":262.38,"delta":-0.2505,"premium":5.4,"spreadPct":14.81,"score":3.2,"pop":75.0,"aroc":0.5017,"thetaEff":16.14,"capital":24250.0,"shieldPrice":230.77,"buffer":-4.47,"daysToEarnings":10,"ivp":95.0},{"ticker":"ORCL","expiry":"2026-03-13","dte":15,"strike":131.0,"spot":145.32,"delta":-0.2549,"premium":4.53,"spreadPct":7.73,"score":2.3,"pop":74.5,"aroc":0.808,"thetaEff":23.59,"capital":13100.0,"shieldPrice":124.29,"buffer":-4.62,"daysToEarnings":7,"ivp":98.0},{"ticker":"DG","expiry":"2026-03-13","dte":15,"strike":144.0,"spot":156.11,"delta":-0.2399,"premium":3.08,"spreadPct":11.38,"score":2.0,"pop":76.0,"aroc":0.49,"thetaEff":16.97,"capital":14400.0,"shieldPrice":135.16,"buffer":-5.66,"daysToEarnings":10,"ivp":76.0},{"ticker":"MRVL","expiry":"2026-03-06","dte":8,"strike":75.0,"spot":81.67,"delta":-0.2462,"premium":1.88,"spreadPct":10.64,"score":2.0,"pop":75.4,"aroc":1.0828,"thetaEff":37.31,"capital":7500.0,"shieldPrice":70.39,"buffer":-5.64,"daysToEarnings":3,"ivp":90.0},{"ticker":"ULTA","expiry":"2026-03-13","dte":15,"strike":650.0,"spot":684.98,"delta":-0.2931,"premium":16.15,"spreadPct":11.76,"score":2.0,"pop":70.7,"aroc":0.569,"thetaEff":15.77,"capital":65000.0,"shieldPrice":606.33,"buffer":-6.38,"daysToEarnings":10,"ivp":71.0}]};
+var columns = [
+  {title:"CONTRACT DETAILS",columns:[
+    {title:"TICKER",field:"ticker",width:75,headerFilter:"input",formatter:function(c){return '<span class="cell-ticker">'+c.getValue()+'</span>';}},
+    {title:"EXPIRY",field:"expiry",width:95,headerFilter:"input",formatter:function(c){return '<span class="cell-muted">'+c.getValue()+'</span>';}},
+    {title:"DTE",field:"dte",width:55,hozAlign:"right",headerFilter:"input"},
+    {title:"STRIKE",field:"strike",width:80,hozAlign:"right",headerFilter:"input",formatter:function(c){return "$"+c.getValue().toFixed(2);}},
+    {title:"SPOT",field:"spot",width:80,hozAlign:"right",headerFilter:"input",formatter:function(c){return "$"+c.getValue().toFixed(2);}}
+  ]},
+  {title:"EARNINGS & IV",columns:[
+    {title:"DAYS TO EARN",field:"daysToEarnings",width:100,hozAlign:"right",headerFilter:"input",formatter:function(c){var v=c.getValue();var cls=v<=7?"cell-orange":v<=14?"cell-yellow":"";return '<span class="'+cls+'">'+v+' days</span>';}},
+    {title:"IVP",field:"ivp",width:65,hozAlign:"right",headerFilter:"input",formatter:function(c){var v=c.getValue();if(v==null)return "\u2014";var cls=v>=50?"cell-green":v>=35?"cell-yellow":"";return '<span class="'+cls+'">'+v.toFixed(0)+"%</span>";}}
+  ]},
+  {title:"GREEKS & PREMIUM",columns:[
+    {title:"DELTA",field:"delta",width:70,hozAlign:"right",headerFilter:"input",formatter:function(c){return c.getValue().toFixed(2);}},
+    {title:"PREMIUM",field:"premium",width:85,hozAlign:"right",headerFilter:"input",formatter:function(c){var v=c.getValue();var cls=v>=1.5?"cell-teal":v>=0.5?"cell-green":"";return '<span class="'+cls+'">$'+v.toFixed(2)+'</span>';}},
+    {title:"SPREAD%",field:"spreadPct",width:80,hozAlign:"right",headerFilter:"input",formatter:function(c){var v=c.getValue();var cls=v>15?"cell-red":v>10?"cell-yellow":"";return '<span class="'+cls+'">'+v.toFixed(1)+"%</span>";}}
+  ]},
+  {title:"CONTRACT ANALYSIS",columns:[
+    {title:"SCORE",field:"score",width:70,hozAlign:"right",headerFilter:"input",formatter:function(c){return c.getValue().toFixed(1)+"/10";}},
+    {title:"POP",field:"pop",width:65,hozAlign:"right",headerFilter:"input",formatter:function(c){var v=c.getValue();if(v==null||v===0)return "\u2014";var cls=v>=85?"cell-green":v>=80?"cell-yellow":"";return '<span class="'+cls+'">'+v.toFixed(0)+"%</span>";}},
+    {title:"ARoC",field:"aroc",width:70,hozAlign:"right",headerFilter:"input",formatter:function(c){var v=c.getValue();if(v==null||v===0)return "\u2014";var pct=(v*100).toFixed(1)+"%";var cls=v>=0.20?"cell-green":v>=0.15?"cell-yellow":"";return '<span class="'+cls+'">'+pct+'</span>';}},
+    {title:"\u03b8 EFF",field:"thetaEff",width:70,hozAlign:"right",headerFilter:"input",formatter:function(c){var v=c.getValue();return(v!=null&&v!==0)?v.toFixed(2):"\u2014";}},
+    {title:"CAPITAL",field:"capital",width:90,hozAlign:"right",headerFilter:"input",formatter:function(c){var v=c.getValue();return v!=null?"$"+v.toLocaleString():"\u2014";}}
+  ]},
+  {title:"SHIELD",columns:[
+    {title:"EXP MOVE",field:"shieldPrice",width:85,hozAlign:"right",headerFilter:"input",formatter:function(c){var v=c.getValue();return v!=null?"$"+v.toFixed(2):"\u2014";}},
+    {title:"BUFFER",field:"buffer",width:65,hozAlign:"right",headerFilter:"input",formatter:function(c){var v=c.getValue();if(v==null)return "\u2014";var cls=v>=5?"cell-green":v>=2?"cell-yellow":"cell-red";return '<span class="'+cls+'">'+v.toFixed(1)+"%</span>";}}
+  ]}
+];
+["CORE", "ALPHA"].forEach(function(p) {
+  var el = document.getElementById("table-" + p);
+  if (el && engineData[p] && engineData[p].length > 0) {
+    new Tabulator("#table-" + p, {
+      data: engineData[p],
+      layout: "fitData",
+      columns: columns,
+      headerFilterPlaceholder: "",
+      columnHeaderVertAlign: "bottom",
+      initialSort: [{ column: "score", dir: "desc" }]
+    });
+  }
+});
+document.querySelectorAll(".filter-btn").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    document.querySelectorAll(".filter-btn").forEach(function(b) { b.classList.remove("active"); });
+    this.classList.add("active");
+    var f = this.dataset.filter;
+    document.querySelectorAll(".engine-section").forEach(function(s) {
+      s.style.display = (f === "all" || s.dataset.engine === f) ? "block" : "none";
+    });
+  });
+});
+  </script>
+</body>
+</html>
